@@ -1,0 +1,36 @@
+/*Layout*/
+.container-md {
+    margin-top: 10px;
+}
+
+.container{
+    padding : 10px;
+}
+/*News*/
+.news-right {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.news-img{
+    max-width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.news-des p{
+    font-size: 14px;
+}
+.news-title{
+    font-weight: bold;
+    width: 100%;
+}
+.caption {
+    font-size: 0.7rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+  
+
