@@ -35,6 +35,14 @@ app.get('/dienbiendich', (req, res) => {
   res.render('filter');
 })
 
+const route = require('./routes');
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+//Routes init
+route(app);
+
+
 //Template Engine
 app.engine('hbs', handlebars({
   extname: '.hbs'
