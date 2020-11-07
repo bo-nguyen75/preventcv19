@@ -1,0 +1,27 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
+    "cookies": "^0.8.0",
+    "csurf": "^1.11.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "firebase": "^7.24.0",
+    "firebase-admin": "^9.3.0"
+  },
+  "devDependencies": {
+    "js-cookie": "^2.2.1",
+    "nodemon": "^2.0.6"
+  }
+}

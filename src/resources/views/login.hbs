@@ -1,0 +1,66 @@
+    <link rel="stylesheet" href="/css/login.css">
+
+    <div class="container">
+        <div class="card card-container">
+            <h3>Đăng nhập</h3>
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" id="login"
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Địa chỉ Email" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Mật khẩu" required>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Đăng nhập</button>
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const firebaseConfig = {
+                apiKey: "AIzaSyAIRWae4spg9sY2gBkQFXmjPGifZfQzP_E",
+                authDomain: "hanto-bad39.firebaseapp.com",
+                databaseURL: "https://hanto-bad39.firebaseio.com",
+                projectId: "hanto-bad39",
+                storageBucket: "hanto-bad39.appspot.com",
+                messagingSenderId: "482697911103",
+                appId: "1:482697911103:web:06ef7c95334c392c90d18a",
+                measurementId: "G-3CJ3JRV7YL"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+
+            firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE);
+
+
+            const login = document.getElementById('login');
+            login.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const login = event.target.inputEmail.value;
+                const password = event.target.inputPassword.value;
+
+                firebase
+                    .auth()
+                    .signInWithEmailAndPassword(login, password)
+                    .then(({ user }) => {
+                        return user.getIdToken().then((idToken) => {
+                            return fetch("/sessionLogin", {
+                                method: "POST",
+                                headers: {
+                                    Accept: "application/json",
+                                    "Content-Type": "application/json",
+                                    "CSRF-Token": Cookies.get("XSRF-TOKEN"),
+                                },
+                                body: JSON.stringify({ idToken }),
+                            });
+                        });
+                    })
+                    .then(() => {
+                        return firebase.auth().signOut();
+                    })
+                    .then(() => {
+                        window.location.assign("/admin");
+                    });
+                return false;
+            });
+        });
+    </script>
