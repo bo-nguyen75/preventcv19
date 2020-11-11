@@ -1,44 +1,44 @@
-
 <div class="container" style="margin-top: 100px;">
 
-      <div class="row">
-          <!--Ben Trai-->
-        <div class="col-lg-8 col-md-8 col-8">
-          <div class="container-md">
-            <!-- ======= Frequently Asked Questioins Section ======= -->
-            <section id="faq" class="faq section-bg">
-              <div class="container" data-aos="fade-up">
-                {{#if dieucanbiet}}
-                  <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
-                    
-                    {{#each dieucanbiet}}
+  <div class="row">
+    <!--Ben Trai-->
+    <div class="col-lg-8 col-md-8 col-8">
+      <div class="container-md">
+        <!-- ======= Frequently Asked Questioins Section ======= -->
+        <section id="faq" class="faq section-bg">
+          <div class="container" data-aos="fade-up">
+            {{#if dieucanbiet}}
+            <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
 
-                       <li>
-                          <a data-toggle="collapse" class="dcb-title" href="#faq1">
-                               
-                               {{title}}
+              {{#each dieucanbiet}}
 
-                               <i class="icofont-simple-up"></i>
-                          </a>
-                          <div id="faq1" class="dcb-content collapsed" data-parent=".faq-list">
-                              <p>
-                                 
-                                 {{content}}
+              <li>
+                <a data-toggle="collapse" class="dcb-title" href="#faq1">
 
-                              </p>
-                          </div>
-                        </li>
-                        
-                      {{/each}}
-                      
-                  </ul>
-                  {{else}}
-                  <p>No Dieucanbiet</p>
-                  {{/if}}
+                  {{title}}
+
+                  <i class="icofont-simple-up"></i>
+                </a>
+                <div id="faq1" class="dcb-content collapsed" data-parent=".faq-list">
+                  <p>
+
+                    {{content}}
+
+                  </p>
                 </div>
-            </section>
-        </div>
-        <!--Ben Phai-->
+              </li>
+
+              {{/each}}
+
+            </ul>
+            {{else}}
+            <p>No Dieucanbiet</p>
+            {{/if}}
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--Ben Phai-->
         <div class="col-lg-4 col-md-4 col-4">
           <div class="container-md">
             <div class="alert alert-danger">
@@ -48,5 +48,4 @@
 
           </div>
         </div>
-    </div>
-</div>
+  </div>
