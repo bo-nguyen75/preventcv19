@@ -1214,5 +1214,43 @@ section {
   font-size: 13px;
 }
 
+.timeline-line {
+  border-left: 3px solid #3fbbc0;
+  padding-left: 10px ;
+}
 
+.widget .evolution-section{
+  float: left;
+  width: 100%;
+}
+
+.evolution-section>ul {
+  float: left;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+/*Evolution*/
+.evolution-section li{
+  padding: 10px;
+}
+
+.timeline-head h5{
+  color: #194b4d;
+}
+.timeline-content {
+  padding-top: 10px;
+}
+
+.text-xemthem{
+  color: #194b4d;
+  font-size: 15px;
+}
+
+.text-center{
+  text-align: center !important;
+}
 
