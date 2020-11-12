@@ -1254,3 +1254,15 @@ section {
   text-align: center !important;
 }
 
+/*Patients Section*/
+.patients thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.patients tbody {
+  display: block;
+  height: 260px;
+  overflow: auto;
+}
