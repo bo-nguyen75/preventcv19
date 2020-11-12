@@ -1,46 +1,49 @@
 const { database } = require('../config/db/');
 const connect = require('../config/db/');
 const db = connect.database();
+const rooRef = db.ref('statistics');
 class AdminControllers {
 
   // [GET] /news
   index(req, res) {
-    db.ref('statistical').once('value',(snapshot) => {
+    rooRef.once('value',(snapshot) => {
       const data = snapshot.val();
       res.render('admin', {statistical: data});
     })
   };
 
   add(req, res) {
-    const newData = {
+    rooRef.child(req.body.id).set({
       patient: req.body.patient,
       age: req.body.age,  
       address: req.body.address, 
-      status: req.body.status, 
+      state: req.body.state, 
       nationality: req.body.nationality, 
-      age: req.body.age, 
-    };
-    db.ref('user').push(newData);
-    res.redirect('admin');
+    })
+    res.redirect('admin'); 
   };
 
   update(req, res) {
-    const newData = {
+    // const id = req.params.id;
+    const newData = {   
       patient: req.body.patient,
       age: req.body.age,  
-      address: req.body.address, 
-      status: req.body.status, 
-      nationality: req.body.nationality, 
-      age: req.body.age, 
+      address: req.body.address,
+      state: req.body.state, 
+      nationality: req.body.nationality,
     };
-    const updates = {};
-    updates['/user' + patient.value] = newData;
-    db.ref().update(updates);
+    // const updates = {};
+    // updates['/statistics' + index] = newData;
+    // db.ref().update(updates);
+    // rooRef.orderByKey.on('value',(snap) => {
+    //   console.log(snap.val());
+    // })
+    rooRef.child(req.body.id).update(newData);
   };
 
-  delete(req, res) {
-    db.ref('statistical').remove();
-  };
+  // delete(req, res) {
+  //   db.ref('statistical').remove();
+  // };
 } 
 
 module.exports = new AdminControllers;
