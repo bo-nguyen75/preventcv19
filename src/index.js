@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const handlebars = require('express-handlebars');
 const port = 3000;
+<<<<<<< HEAD
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -35,6 +36,8 @@ app.get('/dienbiendich', (req, res) => {
   res.render('filter');
 })
 
+=======
+>>>>>>> 1f8d8aef23463b6ce14c178b8a4491d3eb1e1239
 const route = require('./routes');
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -42,7 +45,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Routes init
 route(app);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1f8d8aef23463b6ce14c178b8a4491d3eb1e1239
 //Template Engine
 app.engine('hbs', handlebars({
   extname: '.hbs'
