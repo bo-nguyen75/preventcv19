@@ -1,0 +1,81 @@
+
+<link rel="stylesheet" href="/assets/css/news.css">
+
+<!-- Main -->
+<main id="main">
+    <!-- News  -->
+    <div class="container" style="margin-top: 100px;">
+          <div class="row">  
+                   
+              
+                  <!--Left Section-->
+                   <div class="col-lg-9 col-md-9 col-9"> 
+                      <div class="container-md" id="new">       
+                          {{#each data}}
+    
+      <div class="row mb-1">
+        <!--Hien thi hinh anh-->
+        <div class="col-sm-6">
+          <a><img class="news-img" src="{{image}}" alt="tintuc"></a>
+        </div>
+        <!--Hien thi thong tin-->
+        <div class="col-sm-6">
+          <div class="news-title" style="font-size: 0.9rem;">
+            <a href="{{Link}}">{{title}}</a>
+            <br>
+            <strong class="text-muted" style="font-size: 10px;">{{date}}</strong> </div>
+          <div class="caption">
+          {{content}}
+          </div>
+        </div>
+      </div>
+    {{/each}}
+           
+              
+                  
+                      
+                  </div>
+                  <!--End #Left Section-->
+  
+                  <!--Right Section-->
+                  <div class="col-lg-3">
+  
+                  </div>
+                  <!--End #Right Section-->
+              </div>
+  
+          </div>
+  
+          <!--Pagination-->
+          <!-- <div class="container"> -->
+            <div class="content__paging">
+              <div class="page">
+                  <ul class="pagination justify-content-center">
+                      {{!-- <li class="btn-prev btn-active fas fa-angle-left">pre</li> --}}
+                       <li class=" page-item btn-prev btn-active"><a class="page-link" href="#">Trước</a></li>
+                      <div class="number-page" id="number-page">
+                          <!-- <li class="active">
+                          <a>1</a>
+                      </li>
+                      <li>
+                          <a>2</a>
+                      </li>
+                      <li>
+                          <a>3</a>
+                      </li> -->
+                      </div>
+                      <li class="page-item btn-next"><a class="page-link" href="#">Sau</a></li>
+                  </ul>
+              </div>
+          </div>
+          <!--End #Pagination-->
+      </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+
+    <!--End #News-->
+</main>
+<!-- End #main -->
