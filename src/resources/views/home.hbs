@@ -107,8 +107,7 @@
               riêng, sức khỏe bình thường, không ho, không sốt.
             </p>
           </div>
-          <br>
-          <p class="text-center"><a class="text-xemthem" href="/tintuc">Xem thêm</a></p>
+
         </div>
       </div>
 
@@ -118,7 +117,7 @@
 
 
   <!-- ======= Counts Section ======= -->
-  <section id="counts" class="counts">
+  <section class="counts">
     <div class="container">
 
       <div class="section-title">
@@ -133,17 +132,17 @@
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up" style="color: brown;">521</span>
+          <span data-toggle="counter-up" style="color: brown;">{{vn.cases}}</span>
           <p>Ca nhiễm bệnh</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up" style="color: forestgreen;">1,463</span>
+          <span data-toggle="counter-up" style="color: forestgreen;">{{vn.recovered}}</span>
           <p>Ca khôi phục</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up" style="color:grey;">15</span>
+          <span data-toggle="counter-up" style="color:grey;">{{vn.deaths}}</span>
           <p>Ca tử vong</p>
         </div>
 
@@ -157,22 +156,20 @@
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up" style="color: brown;">521</span>
+          <span class="cases" data-toggle="counter-up" style="color: brown;">{{all.cases}}</span>
           <p>Ca nhiễm bệnh</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up" style="color: forestgreen;">1,463</span>
+          <span class="recovered" data-toggle="counter-up" style="color: forestgreen;">{{all.recovered}}</span>
           <p>Ca khôi phục</p>
         </div>
 
         <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up" style="color:grey;">15</span>
+          <span class="deaths" data-toggle="counter-up" style="color:grey;">{{all.deaths}}</span>
           <p>Ca tử vong</p>
         </div>
-
       </div>
-
     </div>
   </section>
   <!-- End #Counts Section -->
