@@ -1,144 +1,44 @@
-
 <div class="container" style="margin-top: 100px;">
 
-      <div class="row">
+  <div class="row">
+    <!--Ben Trai-->
+    <div class="col-lg-8 col-md-8 col-8">
+      <div class="container-md">
+        <!-- ======= Frequently Asked Questioins Section ======= -->
+        <section id="faq" class="faq section-bg">
+          <div class="container" data-aos="fade-up">
+            {{#if dieucanbiet}}
+            <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="col-lg-8 col-md-8 col-8">
-          <div class="container-md">
-            <!-- ======= Frequently Asked Questioins Section ======= -->
-            <section id="faq" class="faq section-bg">
-              <div class="container" data-aos="fade-up">
+              {{#each dieucanbiet}}
 
+              <li>
+                <a data-toggle="collapse" class="dcb-title" href="#faq1">
 
-                <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+                  {{title}}
 
-                  <li>
-                    <a data-toggle="collapse" class="dcb-title" href="#faq1">COVID-19 là gì ?<i
-                        class="icofont-simple-up"></i></a>
-                    <div id="faq1" class="dcb-content collapse show" data-parent=".faq-list">
-                      <p>
-                        COVID-19 là bệnh truyền nhiễm do coronavirus được phát hiện gần đây nhất gây ra. Loại virus và
-                        căn bệnh
-                        mới này chưa được biết đến trước khi bùng phát ở Vũ Hán, Trung Quốc, vào tháng 12 năm 2019.
-                        COVID-19
-                        hiện là đại dịch ảnh hưởng đến nhiều quốc gia trên toàn cầu.
-                      </p>
-                    </div>
-                  </li>
+                  <i class="icofont-simple-up"></i>
+                </a>
+                <div id="faq1" class="dcb-content collapsed" data-parent=".faq-list">
+                  <p>
 
-                  <li>
-                    <a data-toggle="collapse" href="#faq2" class="dcb-title collapsed">Các triệu chứng của COVID-19 là gì? <i
-                        class="icofont-simple-up"></i></a>
-                    <div id="faq2" class="dcb-content collapse" data-parent=".faq-list">
-                      <p>
-                        Các triệu chứng phổ biến nhất của COVID-19 là sốt, ho khan và mệt mỏi. Các triệu chứng khác ít
-                        phổ biến
-                        hơn và có thể ảnh hưởng đến một số bệnh nhân bao gồm đau nhức, nghẹt mũi, nhức đầu, viêm kết
-                        mạc, đau
-                        họng, tiêu chảy, mất vị giác hoặc khứu giác hoặc phát ban trên da hoặc đổi màu ngón tay hoặc
-                        ngón chân.
-                        Các triệu chứng này thường nhẹ và bắt đầu dần dần. Một số người bị nhiễm bệnh nhưng chỉ có các
-                        triệu
-                        chứng rất nhẹ.
-                      </p>
-                    </div>
-                  </li>
+                    {{content}}
 
-                  <li>
-                    <a data-toggle="collapse" href="#faq3" class="dcb-title collapsed">COVID-19 lây lan như thế nào? <i
-                        class="icofont-simple-up"></i></a>
-                    <div id="faq3" class="dcb-content collapse" data-parent=".faq-list">
-                      <p>
-                        Mọi người có thể nhiễm COVID-19 từ những người khác có vi rút. Căn bệnh này chủ yếu lây lan từ
-                        người này
-                        sang người khác qua những giọt nhỏ từ mũi hoặc miệng, những giọt nhỏ này được tống ra ngoài khi
-                        người
-                        mắc bệnh COVID-19 ho, hắt hơi hoặc nói. Những giọt này tương đối nặng, không di chuyển được xa
-                        và nhanh
-                        chóng chìm xuống đất. Mọi người có thể nhiễm COVID-19 nếu hít phải những giọt này từ người bị
-                        nhiễm vi
-                        rút.
-                      </p>
-                    </div>
-                  </li>
+                  </p>
+                </div>
+              </li>
 
-                  <li>
-                    <a data-toggle="collapse" href="#faq4" class="dcb-title collapsed">COVID-19 có thể bị lây nhiễm từ người không
-                      có
-                      triệu chứng không? <i class="icofont-simple-up"></i></a>
-                    <div id="faq4" class="dcb-content collapse" data-parent=".faq-list">
-                      <p>
-                        COVID-19 chủ yếu lây lan qua các giọt đường hô hấp do người đang ho hoặc có các triệu chứng khác
-                        như sốt
-                        hoặc mệt mỏi tống ra ngoài. Nhiều người bị COVID-19 chỉ gặp các triệu chứng nhẹ. Điều này đặc
-                        biệt đúng
-                        trong giai đoạn đầu của bệnh. Có thể bị nhiễm COVID-19 từ người mới bị ho nhẹ và không cảm thấy
-                        bị bệnh.
+              {{/each}}
 
-                        Một số báo cáo đã chỉ ra rằng những người không có triệu chứng có thể truyền vi rút. Người ta
-                        vẫn chưa
-                        biết mức độ thường xuyên của nó. WHO đang đánh giá nghiên cứu đang diễn ra về chủ đề này và sẽ
-                        tiếp tục
-                        chia sẻ những phát hiện cập nhật.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <a data-toggle="collapse" href="#faq5" class="dcb-title collapsed">Tôi nên làm gì khi tiếp xúc với người bị
-                      COVID-19?
-                      <i class="icofont-simple-up"></i></a>
-                    <div id="faq5" class="dcb-content collapse" data-parent=".faq-list">
-                      <p>
-                        Nếu bạn đã tiếp xúc gần với người có COVID-19, bạn có thể bị nhiễm bệnh.
-                        Tiếp xúc gần nghĩa là bạn sống chung hoặc ở trong những nơi cách những người mắc bệnh chưa đến 1
-                        mét.
-                        Trong những trường hợp này, tốt nhất là bạn nên ở nhà.
-                        Tuy nhiên, nếu bạn sống trong khu vực có bệnh sốt rét hoặc sốt xuất huyết, điều quan trọng là
-                        bạn không
-                        được bỏ qua các triệu chứng sốt. Tìm kiếm sự trợ giúp y tế. Khi đến cơ sở y tế, hãy đeo khẩu
-                        trang nếu
-                        có thể, giữ cách xa người khác ít nhất 1 mét và không dùng tay chạm vào các bề mặt. Nếu đó là
-                        một đứa
-                        trẻ đang bị bệnh, hãy giúp trẻ tuân theo lời khuyên này.
-                      </p>
-                    </div>
-                  </li>
-
-                  <li>
-                    <a data-toggle="collapse" href="#faq6" class="dcb-title collapsed">Có thuốc chủng ngừa hoặc thuốc điều trị
-                      COVID-19
-                      không? <i class="icofont-simple-up"></i></a>
-                    <div id="faq6" class="dcb-content collapse" data-parent=".faq-list">
-                      <p>
-                        Mặc dù một số phương pháp điều trị bằng phương pháp tây y, truyền thống hoặc tại nhà có thể mang
-                        lại sự
-                        thoải mái và giảm bớt các triệu chứng của COVID-19 nhẹ, nhưng không có loại thuốc nào được chứng
-                        minh là
-                        có thể ngăn ngừa hoặc chữa khỏi bệnh. WHO không khuyến nghị tự dùng thuốc với bất kỳ loại thuốc
-                        nào, kể
-                        cả thuốc kháng sinh, như một biện pháp phòng ngừa hoặc chữa bệnh cho COVID-19. Tuy nhiên, có một
-                        số thử
-                        nghiệm lâm sàng đang diễn ra đối với cả thuốc tây và thuốc cổ truyền. WHO đang phối hợp các nỗ
-                        lực để
-                        phát triển vắc xin và thuốc để ngăn ngừa và điều trị COVID-19 và sẽ tiếp tục cung cấp thông tin
-                        cập nhật
-                        ngay khi có kết quả nghiên cứu.
-                      </p>
-                    </div>
-                  </li>
-
-                </ul>
-
-              </div>
-            </section>
-            <!-- End Frequently Asked Questioins Section -->
-
-
+            </ul>
+            {{else}}
+            <p>No Dieucanbiet</p>
+            {{/if}}
           </div>
-        </div>
-
-        <!--BEN PHAI-->
+        </section>
+      </div>
+    </div>
+    <!--Ben Phai-->
         <div class="col-lg-4 col-md-4 col-4">
           <div class="container-md">
             <div class="alert alert-danger">
@@ -148,11 +48,4 @@
 
           </div>
         </div>
-<<<<<<< HEAD
-
-      </div>
-
-    </div>
-=======
   </div>
->>>>>>> 1f8d8aef23463b6ce14c178b8a4491d3eb1e1239

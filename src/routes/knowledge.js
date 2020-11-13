@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-const express = require('express');
-const router = express.Router();
-
-const KnowledgeController = require('../app/controllers/KnowledgeController');
-
-
-router.get('/', KnowledgeController.index);  
-
-module.exports = router;
-=======
 // const express = require('express');
 // const router = express.Router();
 
@@ -39,4 +28,3 @@ router.get('/', (req, res)=>{
 
 
 module.exports = router;  
->>>>>>> 1f8d8aef23463b6ce14c178b8a4491d3eb1e1239
