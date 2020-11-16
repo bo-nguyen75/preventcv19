@@ -25,10 +25,15 @@ class AdminControllers {
   }
 
   update(req, res) {
-    rooRef.orderByChild('patient').equalTo('BN1').on('value', snapshot => {
-      console.log(snapshot.val());
-    });
-    res.redirect("admin");
+    const newData = {
+      age: req.body.age,
+      address: req.body.address,
+      state: req.body.state,
+      nationality: req.body.nationality,
+    }
+    const patientID = req.params.id;
+    rooRef.child(patientID).update(newData);
+    res.redirect('back');
   }
 
   destroy(req, res) {

@@ -22,8 +22,8 @@
                 <div class="col-sm-6">
                   <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
                       class="icofont-ui-add"></i><span>Thêm người dùng</span></a>
-                  {{!-- <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
-                      class="icofont-ui-delete"></i> <span>Xóa người dùng</span></a> --}}
+                  <a href="#deleteEmployeeModal" class="btn btn-danger check-all-submit-btn disabled" data-toggle="modal"><i
+                      class="icofont-ui-delete"></i> <span>Xóa người dùng</span></a>
                 </div>
               </div>
             </div>
@@ -31,10 +31,9 @@
               <thead>
                 <tr>
                   <th>
-                    <span class="custom-checkbox">
-                      <input type="checkbox" id="selectAll">
-                      <label for="selectAll"></label>
-                    </span>
+                    <div class="form-checkbox">
+                      <input class="form-checkbox-input" type="checkbox" id="checkbox-all"> 
+                    </div>
                   </th>
                   <th scope="col">Số thứ tự</th>
                   <th scope="col">Bệnh Nhân</th>
@@ -49,10 +48,9 @@
                 {{#each statistical}}
                 <tr>
                   <td>
-                    <span class="custom-checkbox">
-                      <input type="checkbox" id="checkbox2" name="options[]" value="1">
-                      <label for="checkbox2"></label>
-                    </span>
+                    <div class="form-checkbox">
+                      <input class="form-checkbox-input" type="checkbox" name="patientIds[]" value="{{patient}}">
+                    </div>
                   </td>
                   <td scope="row">{{sum @index 1}}</td>
                   <td scope="row">{{patient}}</td>
@@ -143,26 +141,28 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
               </div>
               <div class="modal-body">
+                {{!-- {{#each statistical}} --}}
                 <div class="form-group">
                   <label>Bệnh Nhân</label>
-                  <input type="text" class="form-control" name="patient" required>
+                  <input type="text" class="form-control" value="{{statistical.patient}}" id="patient" name="patient" required>
                 </div>
                 <div class="form-group">
                   <label>Tuổi</label>
-                  <input type="text" class="form-control" name="age" required>
+                  <input type="text" class="form-control" value="{{age}}" name="age" required>
                 </div>
                 <div class="form-group">
                   <label>Địa chỉ</label>
-                  <input type="text" class="form-control" name="address" required>
+                  <input type="text" class="form-control" value="{{address}}" name="address" required>
                 </div>
                 <div class="form-group">
                   <label>Tình Trạng</label>
-                  <input type="text" class="form-control" name="state" required>
+                  <input type="text" class="form-control" value="{{state}}" name="state" required>
                 </div>
                 <div class="form-group">
                   <label>Quốc tịch</label>
-                  <input type="text" class="form-control" name="nationality" required>
+                  <input type="text" class="form-control" value="{{nationality}}" name="nationality" required>
                 </div>
+                {{!-- {{/each}} --}}
               </div>
               <div class="modal-footer">
                 <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -206,6 +206,11 @@
     var patientID;
     var deleteForm = document.forms['delete-statistics-form'];
     var btnDeleteStatistics = document.getElementById('btn-delete-statistics');
+    var checkboxAll = $('#checkbox-all');
+    var patientItemCheckbox = $('input[name="patientIds[]"]'); 
+    var checkAllSubmitBtn = $('.check-all-submit-btn');
+
+    //When dialog confirm clicked
     $('#delete-patient-modal').on('show.bs.modal', function (event) {
       var button = $(event.relatedTarget)
       patientID = button.data('patient');
@@ -213,11 +218,44 @@
     });
     btnDeleteStatistics.onclick = function () {
       deleteForm.action = '/admin/' + patientID + '?_method=Delete';
-      deleteForm.submit();
+      deleteForm.submit();  
     }
+    
+    //Checkbox all changed
+    checkboxAll.change(function() {
+      var isCheckedAll = $(this).prop('checked');
+      patientItemCheckbox.prop('checked', isCheckedAll);
+    });
+
+    //Checkbox item changed
+    patientItemCheckbox.change(function() {
+      var isCheckAll = patientItemCheckbox.length === $('input[name="patientIds[]"]:checked').length;
+      checkboxAll.prop('checked', isCheckAll);
+    });
+
+    //Re-render check all submit button
+    function renderCheckAllSubmitBtn() {
+      var checkedCount = $('input[name="patientIds[]"]:checked').length;
+      console.log(checkedCount)
+    }
+    console.log(checkAllSubmitBtn);
   });
 
   //btn update
-  
+  document.addEventListener('DOMContentLoaded', function () {
+    var patientID;
+    var updateForm = document.forms['update-statistics-form'];
+    var btnUpdateStatistics = document.getElementById('btn-update-statistics');
+    $('#update-patient-modal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget)
+      patientID = button.data('patient');
+      console.log(patientID);
+    });
+    btnUpdateStatistics.onclick = function () {
+
+      updateForm.action = '/admin/' + patientID + '?_method=PUT';
+      updateForm.submit();
+    }
+  });
 
 </script>
