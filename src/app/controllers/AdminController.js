@@ -1,8 +1,7 @@
 const { database } = require("../config/db/");
 const connect = require("../config/db/");
 const db = connect.database();
-const rooRef = db.ref("statistics");
-const functions = require('firebase-functions');
+const rooRef = db.ref("statistics");;
 class AdminControllers {
   // [GET] /news
   index(req, res) {
