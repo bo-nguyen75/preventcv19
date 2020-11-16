@@ -18,7 +18,9 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "firebase": "^7.24.0",
-    "firebase-admin": "^9.3.0"
+    "firebase-admin": "^9.4.1",
+    "firebase-functions": "^3.11.0",
+    "method-override": "^3.0.0"
   },
   "devDependencies": {
     "js-cookie": "^2.2.1",

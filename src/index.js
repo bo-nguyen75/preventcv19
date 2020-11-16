@@ -9,6 +9,7 @@ const csrfMiddleware = csrf({ cookie: true });
 const route = require('./routes');
 const db = require('../src/app/config/db/index')
 const cookies = require('cookies');
+const methodOverride = require('method-override')
 
 //form chu
 app.use(express.urlencoded());
@@ -26,6 +27,7 @@ app.engine('hbs', handlebars({
 
 app.set('view engine', 'hbs');
 
+app.use(methodOverride('_method'))
 
 //set views
 app.set('views',path.join(__dirname, 'resources', 'views'));

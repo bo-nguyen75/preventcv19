@@ -1,49 +1,42 @@
-const { database } = require('../config/db/');
-const connect = require('../config/db/');
+const { database } = require("../config/db/");
+const connect = require("../config/db/");
 const db = connect.database();
-const rooRef = db.ref('statistics');
+const rooRef = db.ref("statistics");
+const functions = require('firebase-functions');
 class AdminControllers {
-
   // [GET] /news
   index(req, res) {
-    rooRef.once('value',(snapshot) => {
+    rooRef.once("value", (snapshot) => {
       const data = snapshot.val();
-      res.render('admin', {statistical: data});
-    })
-  };
+      res.render("admin", { statistical: data });
+    });
+  }
 
   add(req, res) {
-    rooRef.child(req.body.id).set({
+    const key = req.body.patient;
+    rooRef.child(key).set({
       patient: req.body.patient,
-      age: req.body.age,  
-      address: req.body.address, 
-      state: req.body.state, 
-      nationality: req.body.nationality, 
-    })
-    res.redirect('admin'); 
-  };
+      age: req.body.age,
+      address: req.body.address,
+      state: req.body.state,
+      nationality: req.body.nationality,
+    });
+    res.redirect("admin");
+  }
 
   update(req, res) {
-    // const id = req.params.id;
-    const newData = {   
-      patient: req.body.patient,
-      age: req.body.age,  
-      address: req.body.address,
-      state: req.body.state, 
-      nationality: req.body.nationality,
-    };
-    // const updates = {};
-    // updates['/statistics' + index] = newData;
-    // db.ref().update(updates);
-    // rooRef.orderByKey.on('value',(snap) => {
-    //   console.log(snap.val());
-    // })
-    rooRef.child(req.body.id).update(newData);
-  };
+    rooRef.orderByChild('patient').equalTo('BN1').on('value', snapshot => {
+      console.log(snapshot.val());
+    });
+    res.redirect("admin");
+  }
 
-  // delete(req, res) {
-  //   db.ref('statistical').remove();
-  // };
-} 
+  destroy(req, res) {
+    const patientID = req.params.id;
+    rooRef.child(patientID).remove();
+    res.redirect('back');
+  }
 
-module.exports = new AdminControllers;
+}
+
+module.exports = new AdminControllers();
