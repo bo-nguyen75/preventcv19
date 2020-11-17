@@ -13,6 +13,7 @@ admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: 'https://preventcovid19-fb9a0.firebaseio.com/'
 });
+const db = admin.database();
 
 
 
