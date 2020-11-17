@@ -1,0 +1,23 @@
+body{
+    font-family: 'Noto Serif';
+}
+.title-detail {
+    
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 10px;
+}
+
+.sapo_detail {
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.fs16 , .fs20 , .news_relate_one , .thumbblock , .info_news_relate_one {
+    /* visibility: hidden; */
+    display: none;
+}
