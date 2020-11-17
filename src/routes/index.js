@@ -5,7 +5,7 @@ const knowledgeControllers = require('./knowledge');
 const filterControllers = require('./filter');
 const communityControllers = require('./community');
 const aboutusControllers = require('./aboutus');
-const detailController =require('./detail')
+
 
 
 const { Router}= require('express');
@@ -23,8 +23,6 @@ function route(app) {
   app.use('/hotro', supportcitizenRouter);
 
   app.use('/tintuc', newsRouter);
-
-  app.use('/chitietnews',detailController);
 
   app.use('/', homeRouter);
 }

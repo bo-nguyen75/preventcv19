@@ -1,342 +1,254 @@
-{
-  "datanews" :{
-
-   "1":{
-        "title" :"Bản tin dịch COVID-19 trong 24h:Thế giới vượt 50 triệu ca mắc COVID-19, Việt Nam 67 ngày không có ca mắc mới trong cộng đồng",
-        "date":"Chủ nhật, 08/11/2020, 09:39",
-        "content" : "Đến 9 giờ ngày 8/11, Việt Nam không ghi nhận ca mắc mới. Nước ta đã trải qua 67 ngày không có ca lây nhiễm SARS-CoV-2 trong cộng đồng; 1070 ca đã được công bố khỏi bệnh. Trong 24 giờ qua, thế giới ghi nhận thêm 485.318 ca mắc COVID-19 và 7.248 ca tử vong, đưa tổng số ca bệnh vượt ngưỡng 50 triệu, trong đó có trên 1.255.000 bệnh nhân không qua khỏi. Nước Mỹ và châu Âu chao đảo trong làn sóng dịch mới.",
-        "image" :"https://media.suckhoedoisong.vn/Images/buiha/2020/10/27/unnamed.jpg",
-        "Link" :"https://ncov.moh.gov.vn/vi/web/guest/-/6847426-377"
-    },
-   "2": {
-        "title" :"55 ngày Việt Nam không ghi nhận ca mắc COVID-19 ở cộng đồng, 1.061 bệnh nhân được chữa khỏi",
-        "date":"Thứ ba, 27/10/2020, 06:28",
-        "content" : "Bộ Y tế tối 26/10 cho biết vừa phát hiện thêm ca mắc mới COVID-19, nâng số ca dương tính ở nước ta lên 1.169.",
-        "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/thaibinh/2020/10/26/55-ngay-viet-nam-khong-ghi-nhan-ca-mac-covid-19-o-cong-dong-1061-benh-nhan-duoc-chua-khoi1603730531.jpg",
-        "Link" :"https://ncov.moh.gov.vn/vi/web/guest/-/6847426-376"
-    },
-    "3":{
-        "title" :"Thêm người mắc COVID-19 trên chuyến bay từng có 14 ca dương tính",
-        "date":"Thứ hai, 26/10/2020, 18:37",
-        "content" : "Bộ Y tế tối 26/10 cho biết vừa phát hiện thêm ca mắc mới COVID-19, nâng số ca dương tính ở nước ta lên 1.169.",
-        "image" :"http://giadinh.mediacdn.vn/2020/6/18/may-bay-vietnam-airlines-sau-khi-cho-benh-nhan-covid-19-thu-17-da-bay-them-6-chuyen-15924777034871258833833.jpg",
-        "Link" :"https://ncov.moh.gov.vn/vi/web/guest/-/6847426-375"
-    },
-    "4":{
-        "title" :"Bản tin dịch COVID-19 trong 24h: Kiên quyết không để dịch bệnh quay lại",
-        "date":"Thứ tư, 21/10/2020, 09:21",
-        "content" : "Tại cuộc họp trực tuyến Thường trực Chính phủ với Ban Chỉ đạo Quốc gia phòng, chống dịch COVID-19 về triển khai một số biện pháp phòng, chống dịch trong giai đoạn hiện nay, Thủ tướng Nguyễn Xuân Phúc lưu ý, mùa Đông khắc nghiệt sẽ tạo thuận lợi cho COVID-19 lây lan rộng. Vì vậy, Thủ tướng nhấn mạnh, không được chủ quan trong mọi trường hợp, mọi cơ quan, đơn vị, địa phương có trách nhiệm cao, kiên quyết không để dịch bệnh quay lại.",
-        "image" :"https://media.suckhoedoisong.vn/thumb_555x335/Images/thuyhanh/2020/10/21/ban-tin-dich-covid-19-trong-24h-kien-quyet-khong-de-dich-benh-quay-lai1603245083.jpg",
-        "Link" :""
-    },
-    "5":{
-        "title" :"Sáng 24/10, không có ca mắc mới, Việt Nam vẫn có 1.148 người mắc COVID-19",
-        "date":"Thứ bảy, 24/10/2020, 06:27",
-        "content" : "Bản tin sáng ngày 24/10, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay đã 52 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng. Việt Nam đã chữa khỏi 1.049/1.148 bệnh nhân COVID-19.",
-        "image" :"https://media.suckhoedoisong.vn/Images/haiyen/2020/10/23/cach_ly.jpg",
-        "Link" :"https://ncov.moh.gov.vn/vi/web/guest/-/6847426-366"
-    },
-    "6":{
-        "title" :"Đến 18h ngày 23/10: Không có ca mắc COVID-19 mới, Việt Nam có 1148 bệnh nhân",
-        "date":"Thứ sáu, 23/10/2020, 18:14",
-        "content" : "Vào 18h ngày 23/10/2020, Ban Chỉ đạo Quốc gia Phòng chống dịch COVID-19 cho biết không có ca mắc mới COVID-19, Việt Nam hiện có 1.148 bệnh nhân. Người dân và ngành y tế không được chủ quan, vẫn phải cảnh giác, chủ động phòng bệnh trong mọi tình huống. Đặc biệt, phải kiểm soát chặt chẽ những người nhập cảnh từ nước ngoài vào Việt Nam.",
-        "image" :"https://media.suckhoedoisong.vn/Images/haiyen/2020/10/23/cach_ly.jpg",
-        "Link" :"https://ncov.moh.gov.vn/vi/web/guest/-/6847426-365"
-    },
-    "7":{
-        "title" :"Bản tin dịch COVID-19 trong 24h: Thực hiện tốt các biện pháp phòng chống dịch trước diễn biến phức tạp của dịch bệnh trên thế giới",
-        "date":"Thứ sáu, 23/10/2020, 09:28",
-        "content" : "Trước diễn biến phức tạp của dịch bệnh COVID-19 trên thế giới, nhất là tình hình tăng mạnh trở lại ở khu vực châu Âu, Việt Nam lại mở cửa đón người Việt từ nước ngoài trở về và các chuyên gia nước ngoài đến làm việc nên việc tuân thủ tốt các biện pháp phòng chống dịch bệnh luôn được đặt lên hàng đầu.",
-        "image" :"https://media.suckhoedoisong.vn/Images/maihuong/2020/10/23/Tuan_thu_nghiem_cac_bien_phap_phong_chong_dich_benh1.jpg",
-        "Link" :"https://ncov.moh.gov.vn/vi/web/guest/-/6847426-364"
-    },
-    "8":{
-        "title" :"Sáng 23/10, Việt Nam không ca mắc mới COVID-19, tình hình dịch thế giới diễn biến phức tạp",
-        "date":"Thứ sáu, 23/10/2020, 06:26",
-        "content" : "Bản tin sáng ngày 23/10, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay đã 51 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng và đã chữa khỏi 1.049 bệnh nhân. Trên thế giới, tình hình dịch COVID-19 tiếp tục diễn biến phức tạp tại châu Âu. Một số điểm nóng về dịch bệnh tại châu Á tiếp tục ghi nhận số ca mắc tăng mạnh...",
-        "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/thaibinh/2020/10/22/sang-23-10-viet-nam-khong-ca-mac-moi-covid-19-tinh-hinh-dich-the-gioi-dien-bien-phuc-tap1603384434.jpg",
-        "Link" :"https://ncov.moh.gov.vn/vi/web/guest/-/6847426-363"
-    },
-    "9": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+[
+  
+  {
+      "title" :"Bản tin dịch COVID-19 trong 24h:Thế giới vượt 50 triệu ca mắc COVID-19, Việt Nam 67 ngày không có ca mắc mới trong cộng đồng",
+      "date":"Chủ nhật, 08/11/2020, 09:39",
+      "content" : "Đến 9 giờ ngày 8/11, Việt Nam không ghi nhận ca mắc mới. Nước ta đã trải qua 67 ngày không có ca lây nhiễm SARS-CoV-2 trong cộng đồng; 1070 ca đã được công bố khỏi bệnh. Trong 24 giờ qua, thế giới ghi nhận thêm 485.318 ca mắc COVID-19 và 7.248 ca tử vong, đưa tổng số ca bệnh vượt ngưỡng 50 triệu, trong đó có trên 1.255.000 bệnh nhân không qua khỏi. Nước Mỹ và châu Âu chao đảo trong làn sóng dịch mới.",
+      "image" :"https://media.suckhoedoisong.vn/Images/minhchau/2020/11/08/vacxinvn-1b_bowh.jpg",
+      "Link" :"https://suckhoedoisong.vn/ban-tin-dich-covid-19-trong-24hthe-gioi-vuot-50-trieu-ca-mac-covid-19-viet-nam-67-ngay-khong-co-ca-mac-moi-trong-cong-dong-n182580.html"
 
     },
-    "10": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+   {
+      "title" :"Đã 24h Việt Nam không ca mắc COVID-19, nhiều nước Châu Âu ghi nhận hàng chục nghìn ca",
+      "date":"Chủ nhật, 08/11/2020, 06:38",
+      "content" : "Bản tin sáng ngày 8/11, của Ban Chỉ đạo Quốc gia cho biết không có ca mắc COVID-19 mới. Đến nay đã 67 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng.Toàn thế giới hiện đã ghi nhận 49,8 triệu ca COVID-19. Tình hình dịch COVID-19 tại 'điểm nóng' châu Âu tiếp tục diễn biến phức tạp khi nhiều nước ghi nhận hàng chục nghìn ca mắc mới.",
+      "image" :"https://media.suckhoedoisong.vn/Images/thaibinh/2020/11/08/da_5_ngay_lien_tiep_Viet_Nam_khong_ghi_nhan_ca_mac_moi_COVID.jpg",
+      "Link" :" https://suckhoedoisong.vn/da-24h-viet-nam-khong-ca-mac-covid-19-nhieu-nuoc-chau-au-ghi-nhan-hang-chuc-nghin-ca--n182578.html"
 
     },
-    "11": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+    {
+      "title" :"Chiều 7/11, không ca mắc mới, Việt Nam chữa khỏi 1.070 bệnh nhân COVID-19",
+      "date":"Thứ bảy, 07/11/2020, 18:31",
+      "content" : "Bản tin chiều ngày 7/11, của Ban Chỉ đạo Quốc gia cho biết không có ca mắc COVID-19 mới. Đến nay đã 66 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng. Việt Nam cũng đã chữa khỏi 1.070 bệnh nhân COVID-19.",
+      "image" :"https://media.suckhoedoisong.vn/thumb_555x335/Images/thaibinh/2020/11/07/chieu-7-11-khong-ca-mac-moi-viet-nam-chua-khoi-1070-benh-nhan-covid-191604746756.jpeg",
+      "Link" :" https://suckhoedoisong.vn/chieu-7-11-khong-ca-mac-moi-viet-nam-chua-khoi-1070-benh-nhan-covid-19-n182573.html"
 
     },
-    "12": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+     {
+      "title" :"Bản tin dịch COVID-19 trong 24h qua: 2 đơn vị của Việt Nam dự kiến cuối năm 2020 sẽ thử nghiệm vòng 1 vắc xin COVID-19 trên người",
+      "date":"Thứ bảy, 07/11/2020, 09:46",
+      "content" : "Trong 24h qua, Việt Nam ghi nhận 3 ca mắc mới COVID-19, có 01 bệnh nhân khỏi bệnh. Tuy nhiên trên thế giới dịch bệnh vẫn diễn ra vô cùng căng thẳng, số ca mắc tăng nhanh chóng. Các quốc gia đang nỗ lực chống dịch và đẩy nhanh tiến độ nghiên cứu, sản xuất vắc xin COVID-19. Các nhà nghiên cứu sản xuất vắc xin của Việt Nam cũng đang nỗ lực đẩy nhanh tiến độ. Trong 4 đơn vị nghiên cứu vắc xin của Việt Nam, có 2 đơn vị dự kiến cuối năm 2020 sẽ bắt đầu thử nghiệm vòng 1 trên người...",
+      "image" :"https://media.suckhoedoisong.vn/thumb_555x335/Images/thaibinh/2020/11/07/ban-tin-dich-covid-19-trong-24h-qua-2-don-vi-cua-viet-nam-du-kien-cuoi-nam-2020-se-thu-nghiem-vong-1-vac-xin-covid-19-tren-nguoi1604715418.jpg",
+      "Link" :" https://suckhoedoisong.vn/2-don-vi-cua-viet-nam-du-kien-cuoi-nam-2020-se-thu-nghiem-vong-1-vac-xin-covid-19-tren-nguoi-n182562.html"
 
     },
-    "13": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+   
+   
+  
+     {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Quản lý chặt người nhập cảnh, tăng cường kiểm tra phòng chống dịch bệnh tại địa phương",
+      "date":"Thứ sáu, 06/11/2020, 09:28",
+      "content" : "Trước tình hình dịch bệnh COVID-19 tăng mạnh trên thế giới, để giữ vững các thành quả mà chúng ta đã đạt được, một mặt cần kiểm soát và quản lý chặt chẽ những người nhập cảnh vào Việt Nam, mặt khác cần tăng cường công tác kiểm tra, giám sát việc phòng chống dịch bệnh tại tất cả các địa phương trong cả nước.",
+      "image" :"https://media.suckhoedoisong.vn/Images/maihuong/2020/11/06/quan_ly_chat_nguoi_nhap_canh1.jpg",
+      "Link" :" https://suckhoedoisong.vn/quan-ly-chat-nguoi-nhap-canh-tang-cuong-phong-chong-dich-tai-dia-phuong-n182503.html"
 
     },
-    "14": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+    {
+      "title" :"Chuyên gia Ấn Độ và 2 người Việt Nam mắc COVID-19, được cách ly ngay khi nhập cảnh",
+      "date":"Thứ sáu, 06/11/2020, 06:45",
+      "content" : "Bản tin 6h ngày 6/11 của Ban Chỉ đạo Quốc gia Phòng chống dịch COVID-19 cho biết đã ghi nhận 3 ca mắc mới COVID-19 là chuyên gia đến từ Ấn Độ và người Việt Nam nhập cảnh từ Nhật Bản được cách ly ngay. Việt Nam hiện có 1.210 bệnh nhân.",
+      "image" :"https://media.suckhoedoisong.vn/Images/toanthang/2020/10/03/31-ngay-khong-ghi-nhan-ca-mac-moi-covid-19-o-cong-dong-hon-16000-nguoi-cach-ly-chong-dich1601722906.jpg",
+      "Link" :" https://suckhoedoisong.vn/chuyen-gia-an-do-va-2-nguoi-viet-nam-mac-covid-19-duoc-cach-ly-ngay-khi-nhap-canh-n182499.html"
 
     },
-    "15": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+   
+    {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Chủ quan, lơ là phòng dịch nguy cơ dịch bệnh xâm nhập",
+      "date":"Thứ năm, 05/11/2020, 09:30",
+      "content" : "Nguy cơ dịch COVID-19 xâm nhập luôn thường trực, tuy nhiên hiện nay đã xuất hiện tình trạng người dân chủ quan, lơ là trong phòng chống dịch.",
+      "image" :"https://ncov.moh.gov.vn/image/journal/article?img_id=7174273&t=1604930961238",
+      "Link" :"https://suckhoedoisong.vn/ban-tin-dich-covid-19-trong-24h--n182416.html"
 
     },
-    "16": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+   
+   
+    {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Giữ an toàn, không để dịch COVID-19 tái phát",
+      "date":"Thứ tư, 04/11/2020, 10:06",
+      "content" : "Thủ tướng Chính phủ, Ban chỉ đạo quốc gia phòng, chống dịch COVID-19 yêu cầu tiếp tục thực hiện nghiêm việc đeo khẩu trang. Biện pháp này không chỉ ở những đô thị lớn, mật độ dân cư cao mà ngay tại các xã phường, thị trấn… Ban Chỉ đạo cũng khẳng định quyết tâm giữ an toàn trong nước, không để dịch COVID-19 tái phát khi mùa Đông đến.",
+      "image" :"https://ncov.moh.gov.vn/image/journal/article?img_id=7173778&t=1604931733735",
+      "Link" :"https://suckhoedoisong.vn/khong-de-dich-covid-19-tai-phat-n182381.html"
 
     },
-    "17": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+    
+    
+    
+   {
+      "title" :"Sáng 3/11, không ca mắc COVID-19, xử lý vi phạm quy định đeo khẩu trang ở cơ sở y tế; chợ, siêu thị...",
+      "date":"Thứ ba, 03/11/2020, 06:46",
+      "content" : "Bản tin sáng ngày 3/11 của Ban Chỉ đạo Quốc gia phòng chống dịch COVID-19 cho biết không có thêm ca mắc COVID-19 mới, Việt Nam hiện vẫn có 1.192 bệnh nhân. Ban Chỉ đạo Quốc gia nhấn mạnh thời gian tới, các tỉnh, thành phố phải tăng cường kiểm tra, xử lý trường hợp vi phạm quy định đeo khẩu trang, đặc biệt tại cơ sở y tế; chợ, siêu thị, trung tâm thương mại; phương tiện giao thông công cộng; cơ sở lưu trú, khách sạn...",
+      "image" :"https://media.suckhoedoisong.vn/Images/toanthang/2020/11/03/unnamed.png",
+      "Link" :"https://suckhoedoisong.vn/sang-3-11-khong-ca-mac-covid-19-xu-ly-vi-pham-quy-dinh-deo-khau-trang-o-y-te-cho-sieu-thi-n182328.html"
 
     },
-    "18": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+    
+    {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Nâng cao cảnh giác, thực hiện nghiêm việc đeo khẩu trang phòng ngừa dịch bệnh",
+      "date":"Thứ hai, 02/11/2020, 09:22",
+      "content" : "Trên thế giới, dịch bệnh vẫn đang diễn biến phức tạp và khó lường. Tại Việt Nam, các cơ quan chức năng yêu cầu các cảng vụ hàng không tổ chức kiểm tra, giám sát việc đảm bảo thực hiện nghiêm túc yêu cầu toàn bộ hành khách (bao gồm cả người Việt Nam và người nước ngoài) bắt buộc phải đeo khẩu trang đúng cách trong suốt thời gian trên máy bay, khi làm thủ tục, trong thời gian ở cảng hàng không, sân bay.",
+      "image" :"https://media.suckhoedoisong.vn/thumb_555x335/Images/haiyen/2020/11/02/ban-tin-dich-covid-19-trong-24h-nang-cao-canh-giac-thuc-hien-nghiem-viec-deo-khau-trang-phong-ngua-dich-benh1604282373.png",
+      "Link" :"https://suckhoedoisong.vn/ban-tin-dich-covid-19-trong-24h--n182287.html"
 
     },
-    "19": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+    {
+      "title" :"Sáng 2/11, không ca mắc mới COVID-19, nhiều nước châu Âu phong toả trở lại",
+      "date":"Thứ hai, 02/11/2020, 06:39",
+      "content" : "Bản tin sáng ngày 2/11 của Ban Chỉ đạo Quốc gia phòng chống dịch COVID-19 cho biết không có thêm ca mắc COVID-19 mới, Việt Nam hiện vẫn có 1.180 bệnh nhân. Đến nay đã 61 ngày chúng ta chưa ghi nhận ca mắc ở cộng đồng và đã chữa khỏi 1.063 bệnh nhân. Trước tình hình dịch bệnh gia tăng nhanh chóng, nhiều nước châu Âu phong toả trở lại.",
+      "image" :"https://media.https://ncov.moh.gov.vn/vi/web/guest/-/6847426-404suckhoedoisong.vn/thumb_355x220/Images/thaibinh/2020/11/01/chieu-1-11-khong-ca-mac-moi-covid-19-viet-nam-van-co-1180-benh-nhan1604228275.jpg",
+      "Link" :" https://suckhoedoisong.vn/sang-2-11-khong-ca-mac-moi-covid-19-nhieu-nuoc-chau-au-phong-toa-tro-lai-n182286.html"
 
     },
-    "20": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+     {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Việt Nam điều trị khỏi 1.063 ca nhiễm COVID-19, trên thế giới gần 1,2 triệu ca tử vong",
+      "date":"Chủ nhật, 01/11/2020, 09:09",
+      "content" : "Tính đến 6 giờ sáng ngày 1/11, Việt Nam không ghi nhận ca mắc mới COVID-19 trong 12 giờ qua, tổng số mắc hiện là 1.180 ca, điều trị khỏi 1.063 ca. Đến nay đã tròn 2 tháng Việt Nam không có ca mắc mới trong cộng đồng. Trên thế giới có 46.344.816 ca mắc và 1.199.344 ca tử vong vì COVID-19.",
+      "image" :"https://media.suckhoedoisong.vn/Images/minhchau/2020/11/01/sang_3_10_khong_ca_mac_moi_covid_19_viet_nam_chua_khoi_1_020_benh_nhan_08465303102020.jpg",
+      "Link" :" https://suckhoedoisong.vn/ban-tin-dich-covid-19-trong-24h-gan-12-trieu-ca-tu-vong-vi-covid-19-tren-the-gioi-n182260.html"
 
     },
-    "21": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+     {
+      "title" :"Tròn 2 tháng Việt Nam chưa ghi nhận ca mắc COVID-19 ở cộng đồng, thế giới hơn 46 triệu ca",
+      "date":"Chủ nhật, 01/11/2020, 06:55",
+      "content" : "Bản tin sáng ngày 1/11, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay tròn 2 tháng Việt Nam chưa ghi nhận ca mắc ở cộng đồng và đã chữa khỏi 1.063 bệnh nhân. Đến sáng nay, thế giới ghi nhận hơn 46 triệu ca COVID-19, trong đó trên 1,19 triệu ca tử vong.",
+      "image" :"https://ncov.moh.gov.vn/image/journal/article?img_id=7173321&t=1604932375955",
+      "Link" :"https://suckhoedoisong.vn/tron-2-thang-viet-nam-chua-ghi-nhan-ca-mac-covid-19-o-cong-dong-the-gioi-hon-46-trieu-ca-n182258.html"
 
     },
-    "22": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+ 
+    {
+      "title" :"Sáng 31/10, không ca mắc COVID-19, hơn 14.700 người đang cách ly chống dịch",
+      "date":"Thứ bảy, 31/10/2020, 06:59",
+      "content" : "Bản tin sáng ngày 31/10, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay đã 59 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng và đã chữa khỏi 1.063 bệnh nhân. Hiện hơn 14.700 người đang cách ly chống dịch. ",
+      "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/thaibinh/2020/10/31/sang-31-10-khong-ca-mac-covid-19-hon-14700-nguoi-dang-cach-ly-chong-dich1604101282.jpg",
+      "Link" :" https://suckhoedoisong.vn/sang-31-10-khong-ca-mac-covid-19-hon-14700-nguoi-dang-cach-ly-chong-dich-n182191.html"
 
     },
-    "23": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+   {
+      "title" :"58 ngày Việt Nam chưa ghi nhận ca mắc COVID-19 ở cộng đồng, 1.063 bệnh nhân được chữa khỏi",
+      "date":"Thứ sáu, 30/10/2020, 18:18",
+      "content" : "Thứ sáu, 30/10/2020, 18:18",
+      "image" :"https://media.suckhoedoisong.vn/Images/toanthang/2020/10/30/benh_nhan_426_tu_vong.jpg",
+      "Link" :"https://suckhoedoisong.vn/58-ngay-viet-nam-chua-ghi-nhan-ca-mac-covid-19-o-cong-dong-1063-benh-nhan-duoc-chua-khoi-n182182.html"
 
     },
-    "24": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+     {
+      "title" :"Tri ân 264 chiến sĩ, 56 tập thể tuyến đầu chống dịch COVID-19",
+      "date":"Thứ sáu, 30/10/2020, 17:36",
+      "content" : "264 cá nhân và 56 tập thể đã được tôn vinh trong chương trình “tri ân tuyến đầu chống dịch COVID-19”. Những tập thể, cá nhân được tôn vinh không chỉ là các y bác sĩ và bệnh viện mà còn có các chiến sĩ bộ đội biên phòng, công an, phi công, tiếp viên hàng không, các tình nguyện viên xuất sắc...",
+      "image" :"https://media.suckhoedoisong.vn/Images/thaibinh/2020/10/30/IMG_2586.jpg",
+      "Link" :" https://suckhoedoisong.vn/tri-an-264-chien-si-56-tap-the-tuyen-dau-chong-dich-covid-19-n182179.html"
 
     },
-    "25": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+   {
+      "title" :"Bệnh viện Phổi khám sàng lọc lao phòng COVID-19 trong tình hình mới",
+      "date":"Thứ sáu, 30/10/2020, 12:14",
+      "content" : "Bệnh viện Phổi, Phú Thọ đã triển khai hiệu quả công tác khám sàng lọc lao tại bệnh viện cũng như cộng đồng, nhiều người bệnh lao đã được phát hiện sớm và điều trị kịp thời.",
+      "image" :"https://media.suckhoedoisong.vn/Images/anhvan/2020/10/30/BV_Phi_kham_sang_lc_ti_cng_ng.jpg",
+      "Link" :"https://suckhoedoisong.vn/benh-vien-phoi-kham-sang-loc-lao-phong-covid-19-trong-tinh-hinh-moi-n182164.html"
 
     },
-    "26": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+    {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Giữ vững thành quả đạt được trước diễn biến xấu của dịch bệnh thế giới",
+      "date":"Thứ sáu, 30/10/2020, 09:19",
+      "content" : "Đã 58 ngày liên tiếp Việt Nam không có ca mắc mới tại cộng đồng trong khi tình hình dịch bệnh trên thế giới có chiều hướng xấu, số ca mắc đã vượt trên 45 triệu ca.",
+      "image" :"https://media.suckhoedoisong.vn/Images/maihuong/2020/10/30/Tuan_thu_cac_quy_dinh_ve_phong_chong_dich_tai_cac_co_so_y_te1.jpg",
+      "Link" :"https://suckhoedoisong.vn/giu-vung-thanh-qua-dat-duoc-truoc-dien-bien-xau-cua-dich-benh-the-gioi-n182159.html"
 
     },
-    "27": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+     {
+      "title" :"Sáng 30/10, Việt Nam không ca mắc mới COVID-19, thế giới vượt 45 triệu ca mắc",
+      "date":"Thứ sáu, 30/10/2020, 06:48",
+      "content" : "Bản tin sáng ngày 30/10, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay đã 58 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng. Trong vòng 24 giờ qua, thế giới ghi nhận trên 511.000 ca bệnh COVID-19 và trên 6.500 ca tử vong. Tổng số ca bệnh từ đầu dịch tới nay đã vượt 45 triệu ca, trong đó trên 1,18 triệu ca tử vong.",
+      "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/thaibinh/2020/10/30/sang-30-10-viet-nam-khong-ca-mac-moi-covid-19-the-gioi-vuot-45-trieu-ca-mac1604014467.jpg",
+      "Link" :" https://suckhoedoisong.vn/sang-30-10-viet-nam-khong-ca-mac-moi-covid-19-the-gioi-vuot-45-trieu-ca-mac-n182156.html"
 
     },
-    "28": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+   
+    
+    
+    {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Dịch bệnh thế giới phức tạp, Việt Nam nối dài chuỗi ngày không có ca bệnh trong cộng đồng",
+      "date":"Thứ năm, 29/10/2020, 09:16",
+      "content" : "Đến thời điểm hiện tại, Việt Nam đã chữa khỏi 1.062 /1.173 bệnh nhân COVID-19. Mặc dù tình hình dịch bệnh thế giới phức tạp nhưng Việt Nam tiếp tục nối dài chuỗi ngày không có ca bệnh trong cộng đồng.",
+      "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/haiyen/2020/10/29/ban-tin-dich-covid-19-trong-24h1603930312.jpg",
+      "Link" :"https://suckhoedoisong.vn/ban-tin-dich-covid-19-trong-24h--n182078.html"
 
     },
-    "29": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+    {
+      "title" :"Mới: Bộ Y tế hướng dẫn áp dụng mức giá xét nghiệm COVID-19 cho người xuất cảnh",
+      "date":"Thứ năm, 29/10/2020, 08:44",
+      "content" : "Xét nghiệm COVID-19 bằng phương pháp Real-time PCR có giá tối đa 734.000 đồng/mẫu, còn test nhanh có giá tối đa 238.000 đồng/mẫu.",
+      "image" :"https://media.suckhoedoisong.vn/Images/thaibinh/2020/10/29/gia_ma_gen.jpg",
+      "Link" :" https://suckhoedoisong.vn/moi-bo-y-te-huong-dan-ap-dung-muc-gia-xet-nghiem-covid-19-cho-nguoi-xuat-canh-n182079.html"
 
     },
-    "30": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
+     {
+      "title" :"Việt Nam 57 ngày chưa ghi nhận ca mắc COVID-19 ở cộng đồng, nhiều nước Châu âu tái áp đặt lệnh phong toả",
+      "date":"Thứ năm, 29/10/2020, 06:48",
+      "content" : "Bản tin sáng ngày 29/10, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay đã 57 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng. Trong 24 giờ qua, thế giới ghi nhận 446.991 trường hợp mắc COVID-19 và 6.137 ca tử vong. Tại châu Âu, trước làn sóng dịch mới, hàng loạt quốc gia tại châu Âu đã quyết định tái áp đặt lệnh phong tỏa.",
+      "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/thaibinh/2020/10/29/viet-nam-57-ngay-chua-ghi-nhan-ca-mac-covid-19-o-cong-dong-nhieu-nuoc-chau-au-tai-ap-dat-lenh-phong-toa1603928313.jpg",
+      "Link" :"https://suckhoedoisong.vn/viet-nam-57-ngay-chua-ghi-nhan-ca-mac-covid-19-o-cong-dong-nhieu-nuoc-chau-au-tai-ap-dat-lenh-phong-toa-n182077.html"
 
     },
-    "31": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
+  
+    
+  
+     {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Yêu cầu phải đeo khẩu trang nơi tập trung đông người",
+      "date":"Thứ tư, 28/10/2020, 09:41",
+      "content" : "Trước tình hình tình hình dịch COVID-19 trên thế giới tiếp tục diễn biến phức tạp, nhằm thực hiện chung sống an toàn với dịch bệnh trong trạng thái bình thường mới, Bộ Y tế dự thảo hướng dẫn đeo khẩu trang tại các địa điểm công cộng, những nơi tập trung đông người.",
+      "image" :"https://media.suckhoedoisong.vn/Images/thuyhanh/2020/10/28/deo_khia_trang.jpg",
+      "Link" :"https://suckhoedoisong.vn/yeu-cau-phai-deo-khau-trang-noi-tap-trung-dong-nguoi-n182032.html"
     },
-    "32": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "33": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "34": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "35": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "36": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "37": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "38": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "39": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "40": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "41": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "42": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    },
-    "43": {
-      "title" :"",
-      "date":"",
-      "content" : "",
-      "image" :"",
-      "Link" :""
-
-    }
+    
+    {
+      "title" :"Bản tin dịch COVID-19 trong 24h: 55 ngày không ghi nhận ca mắc mới trong cộng đồng; cần quản lý chặt người nhập cảnh",
+      "date":"Thứ ba, 27/10/2020, 09:13",
+      "content" : "Tại Việt Nam đã 55 ngày không ghi nhận ca mắc trong cộng đồng. Trên thế giới dịch COVID – 19 tăng theo cấp số nhân. Bộ y tế khuyến cáo: nguy cơ dịch bệnh xâm nhập rất cao, các cơ quan chức năng cần siết chặt hơn các biện pháp giám sát, quản lý chặt những người nhập cảnh, tuân thủ nghiêm việc cách ly tập trung.",
+      "image" :"https://media.suckhoedoisong.vn/Images/buiha/2020/10/27/unnamed.jpg",
+      "Link" :" https://suckhoedoisong.vn/ban-tin-dich-covid-19-trong-24h-55-ngay-khong-ghi-nhan-ca-mac-moi-trong-cong-dong-can-quan-ly-chat-nguoi-nhap-canh-n181988.html"
+  },
+  {
+      "title" :"55 ngày Việt Nam không ghi nhận ca mắc COVID-19 ở cộng đồng, 1.061 bệnh nhân được chữa khỏi",
+      "date":"Thứ ba, 27/10/2020, 06:28",
+      "content" : "Bộ Y tế tối 26/10 cho biết vừa phát hiện thêm ca mắc mới COVID-19, nâng số ca dương tính ở nước ta lên 1.169.",
+      "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/thaibinh/2020/10/26/55-ngay-viet-nam-khong-ghi-nhan-ca-mac-covid-19-o-cong-dong-1061-benh-nhan-duoc-chua-khoi1603730531.jpg",
+      "Link" :"https://suckhoedoisong.vn/55-ngay-viet-nam-khong-ghi-nhan-ca-mac-covid-19-o-cong-dong-1061-benh-nhan-duoc-chua-khoi-n181983.html"
+  },
+  
+  {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Kiên quyết không để dịch bệnh quay lại",
+      "date":"Thứ tư, 21/10/2020, 09:21",
+      "content" : "Tại cuộc họp trực tuyến Thường trực Chính phủ với Ban Chỉ đạo Quốc gia phòng, chống dịch COVID-19 về triển khai một số biện pháp phòng, chống dịch trong giai đoạn hiện nay, Thủ tướng Nguyễn Xuân Phúc lưu ý, mùa Đông khắc nghiệt sẽ tạo thuận lợi cho COVID-19 lây lan rộng. Vì vậy, Thủ tướng nhấn mạnh, không được chủ quan trong mọi trường hợp, mọi cơ quan, đơn vị, địa phương có trách nhiệm cao, kiên quyết không để dịch bệnh quay lại.",
+      "image" :"https://media.suckhoedoisong.vn/thumb_555x335/Images/thuyhanh/2020/10/21/ban-tin-dich-covid-19-trong-24h-kien-quyet-khong-de-dich-benh-quay-lai1603245083.jpg",
+      "Link" :"https://suckhoedoisong.vn/-kien-quyet-khong-de-dich-benh-quay-lai-n181730.html"
+  },
+  {
+      "title" :"Sáng 24/10, không có ca mắc mới, Việt Nam vẫn có 1.148 người mắc COVID-19",
+      "date":"Thứ bảy, 24/10/2020, 06:27",
+      "content" : "Bản tin sáng ngày 24/10, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay đã 52 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng. Việt Nam đã chữa khỏi 1.049/1.148 bệnh nhân COVID-19.",
+      "image" :"https://media.suckhoedoisong.vn/Images/haiyen/2020/10/23/cach_ly.jpg",
+      "Link" :"https://suckhoedoisong.vn/viet-nam-co-1148-nguoi-mac-covid-19-nang-cao-canh-giac-truoc-dien-bien-dich-benh-the-gioi-n181879.html"
+  },
+  {
+      "title" :"Đến 18h ngày 23/10: Không có ca mắc COVID-19 mới, Việt Nam có 1148 bệnh nhân",
+      "date":"Thứ sáu, 23/10/2020, 18:14",
+      "content" : "Vào 18h ngày 23/10/2020, Ban Chỉ đạo Quốc gia Phòng chống dịch COVID-19 cho biết không có ca mắc mới COVID-19, Việt Nam hiện có 1.148 bệnh nhân. Người dân và ngành y tế không được chủ quan, vẫn phải cảnh giác, chủ động phòng bệnh trong mọi tình huống. Đặc biệt, phải kiểm soát chặt chẽ những người nhập cảnh từ nước ngoài vào Việt Nam.",
+      "image" :"https://media.suckhoedoisong.vn/Images/haiyen/2020/10/23/cach_ly.jpg",
+      "Link" :" https://suckhoedoisong.vn/den-18h-ngay-23-10-khong-co-ca-mac-covid-19-moi-viet-nam-co-1148-benh-nhan-n181861.html"
+  },
+  {
+      "title" :"Bản tin dịch COVID-19 trong 24h: Thực hiện tốt các biện pháp phòng chống dịch trước diễn biến phức tạp của dịch bệnh trên thế giới",
+      "date":"Thứ sáu, 23/10/2020, 09:28",
+      "content" : "Trước diễn biến phức tạp của dịch bệnh COVID-19 trên thế giới, nhất là tình hình tăng mạnh trở lại ở khu vực châu Âu, Việt Nam lại mở cửa đón người Việt từ nước ngoài trở về và các chuyên gia nước ngoài đến làm việc nên việc tuân thủ tốt các biện pháp phòng chống dịch bệnh luôn được đặt lên hàng đầu.",
+      "image" :"https://media.suckhoedoisong.vn/Images/maihuong/2020/10/23/Tuan_thu_nghiem_cac_bien_phap_phong_chong_dich_benh1.jpg",
+      "Link" :" https://suckhoedoisong.vn/thuc-hien-tot-phong-chong-dich-truoc-dien-bien-phuc-tap-cua-the-gioi-n181838.html"
+  },
+  {
+      "title" :"Sáng 23/10, Việt Nam không ca mắc mới COVID-19, tình hình dịch thế giới diễn biến phức tạp",
+      "date":"Thứ sáu, 23/10/2020, 06:26",
+      "content" : "Bản tin sáng ngày 23/10, của Ban Chỉ đạo Quốc gia cho biết không có thêm ca mắc COVID-19 mới. Đến nay đã 51 ngày Việt Nam không ghi nhận ca mắc ở cộng đồng và đã chữa khỏi 1.049 bệnh nhân. Trên thế giới, tình hình dịch COVID-19 tiếp tục diễn biến phức tạp tại châu Âu. Một số điểm nóng về dịch bệnh tại châu Á tiếp tục ghi nhận số ca mắc tăng mạnh...",
+      "image" :"https://media.suckhoedoisong.vn/thumb_600x400/Images/thaibinh/2020/10/22/sang-23-10-viet-nam-khong-ca-mac-moi-covid-19-tinh-hinh-dich-the-gioi-dien-bien-phuc-tap1603384434.jpg",
+      "Link" :"https://suckhoedoisong.vn/sang-23-10-viet-nam-khong-ca-mac-moi-covid-19-tinh-hinh-dich-the-gioi-dien-bien-phuc-tap-n181833.html"
   }
-}
-
+  ]

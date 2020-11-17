@@ -1,21 +1,18 @@
-// const db = admin.database();
-// db.ref('datanews').once('value', (snapshot) => {
-//   data = snapshot.val();
-//   module.exports.index=function(req,res){
-//     var page =parseInt(req.query.page)||1;
-//     var perPage =8;
-//     var start =(page-1)*perPage;
-//     var end = page*perPage;
-//     var drop =(page-1)*perPage;
-//     res.render('news',{
-//       news: data.get('news').drop(drop).take(perPage).value()
-//     });
-//   }
-// });
+
+var request=require('request');
+var express =require('express');
+const router = express.Router();
+var cheerio=require('cheerio');
+const data=require('../../../js/data.json')
+var bodyParser = require('body-parser');
+
+
+
 const admin = require('firebase-admin')
 
 
 const db = admin.database();
+
 class NewsControllers {
 
   // [GET] / home
@@ -27,15 +24,58 @@ class NewsControllers {
     db.ref('datanews').once('value', (snapshot) => {
       
       var data = snapshot.val();
+      
+
       res.render('news', {datanews: data})
    
 
 });
 }
 show(req,res){
-  res.render("news detail");
+
+
+  var link;
+  for(let i=0;i<data.length;i++){
+    if(req.params.tintuc==data[i].title){
+    link=data[i].Link;
+    break;
+
+    }
+  }
+
+
+
+  
+      var headers = {
+        'User-Agent':'Super Agent/0.0.1',
+        'Content-Type':'application/x-ww-form-urlencoded'
+      }
+      var option={
+        url :link,
+        headers :headers,
+        qs :{'key1':'xxx','key2':'yyy'}
+    
+
+
+  }
+  
+  request(option,function(error,response,body){
+            if(error){
+                console.log(error);
+            }else{
+                //console.log(body);
+             var $=cheerio.load(body);
+             var doc=$('.col660').html();  
+            res.render('detail',{html:doc});
+            
+      
+            }
+              
+          })
+
 }
 }
+
 
 
 

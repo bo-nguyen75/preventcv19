@@ -6,8 +6,8 @@ const serviceAccount = require("../../../abc.json");
 
 
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: 'https://contactform-cb752.firebaseio.com/'
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://preventcovid19-fb9a0.firebaseio.com"
 });
 const db = admin.database();
 
