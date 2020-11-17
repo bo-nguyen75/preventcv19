@@ -3,16 +3,17 @@
 
 // const KnowledgeController = require('../app/controllers/KnowledgeController');
 
-const admin = require('firebase-admin');
-const serviceAccount = require("../../contactform-cb752-firebase-adminsdk-25y9j-bda04b23ab.json");
+const { Router}= require('express');
+const router = Router();
+const admin = require('firebase-admin')
+
+ var serviceAccount = require("../../preventcovid19.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL:'https://contactform-cb752.firebaseio.com/'
-})
-const db = admin.database();
-const { Router}= require('express');
-const router = Router();
+    databaseURL: 'https://preventcovid19-fb9a0.firebaseio.com/'
+});
+
 
 
 router.get('/', (req, res)=>{
