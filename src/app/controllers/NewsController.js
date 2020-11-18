@@ -3,7 +3,7 @@ var request=require('request');
 var express =require('express');
 const router = express.Router();
 var cheerio=require('cheerio');
-const data=require('../../../js/data.json')
+const data=require('../../../js/news.json');
 var bodyParser = require('body-parser');
 
 
@@ -17,10 +17,7 @@ class NewsControllers {
 
   // [GET] / home
   index(req, res) {
-    let perPage = 5;
-    let idPage = 1;
-    let start = 0;
-    let end = perPage;
+   
     db.ref('datanews').once('value', (snapshot) => {
       
       var data = snapshot.val();

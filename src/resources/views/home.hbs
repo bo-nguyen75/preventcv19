@@ -79,39 +79,26 @@
         </div>
 
         <div class="row" id="news">
-          {{!-- <div class="col-lg-6" data-aos="fade-right">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          {{#if datahomes}}
+          {{#each datahomes}}
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="{{image}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3><a
-                href="https://ncov.moh.gov.vn/en/web/guest/-/-bien-phong-cach-ly-thanh-phong-e-e-cuu-2-san-phu"></a>"Biến"
-              phòng cách ly thành phòng đẻ để cứu 2 sản phụ</h3>
+            <a href="/{{title}}"><h3>{{title}}</h3></a>
             <p class="description">
-              Đang trong thời gian cách ly tập trung từ Lào về nước, chị Đ.N.A. (trú tại Hà Nội) và B.T.V. (trú tại TP
-              Vinh, Nghệ An) gặp tình huống cần xử lý cấp cứu Sản khoa tối khẩn.
+            {{description}}
             </p>
             <div class="section">
               <p>
-                Sáng 8/5, Bệnh viện Hữu nghị Đa khoa Nghệ An (Bệnh viện HNĐK Nghệ An) cho biết, vừa cấp cứu Sản khoa tối
-                khẩn cho hai sản phụ trong trong khu cách ly ở Trung tâm bệnh nhiệt đới.
-
-                Cụ thể, 10h30 ngày 7/5, các bác sĩ, nữ hộ sinh khoa Sản và Trung tâm bệnh nhiệt đới đã đỡ đẻ thành công
-                cho một sản phụ đang trong thời gian cách ly tại đây. Sản phụ tên Đ.N.A. được cách ly ngay sau khi trở
-                về từ Lào bằng xe cấp cứu vào ngày 6/5.
-
-                Vào tháng 2/2020, chị A. sang thủ đô Viêng Chăn (Lào) thăm chị gái và không thể về nước sớm do dịch
-                COVID-19. Đến đầu tháng 5/2020, khi mang thai ở tuần 37, chị A. đến thăm khám tại Bệnh viện Viêng Chăn
-                và được chuyển cấp cứu về Việt Nam. Ngay khi về nước, chị A. được nhập viện theo dõi cách ly tại Trung
-                tâm Bệnh nhiệt đới (Bệnh viện HNĐK Nghệ An) với chẩn đoán mang thai con đầu gần sinh.
-
-                Tiên lượng tình huống sản phụ sẽ sinh trong thời gian cách ly nên bệnh viện và gia đình chuẩn bị sẵn
-                phương án, vật dụng cần thiết chào đón em bé chào đời. Sản phụ cũng được tách ra, nằm ở phòng cách ly
-                riêng, sức khỏe bình thường, không ho, không sốt.
+                {{content}}
               </p>
             </div>
 
-          </div> --}}
-          {{{data}}}
+          </div>
+          {{/each}}
+          {{/if}}
+        
         </div>
 
       </div>
