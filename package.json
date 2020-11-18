@@ -19,10 +19,13 @@
   "homepage": "https://github.com/bo-nguyen75/preventcv19#readme",
   "dependencies": {
     "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "firebase": "^8.0.2",
-    "firebase-admin": "^9.4.1"
+    "firebase-admin": "^9.4.1",
+    "fs": "0.0.1-security",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
