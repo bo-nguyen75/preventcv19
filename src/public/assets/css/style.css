@@ -804,6 +804,8 @@ section {
 }
 .news .description{
   font-weight: bold;
+  font-size: 13px;
+  color: grey;
 }
 .news .section {
     overflow: hidden;
