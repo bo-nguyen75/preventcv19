@@ -352,7 +352,7 @@
       <div class="section-title">
         <h2>DANH SÁCH BỆNH NHÂN</h2>
       </div>
-      <table class="table table-striped">
+      <table class="table table-striped" >
         <thead>
           <tr>
             <th>Bệnh nhân</th>
@@ -363,69 +363,17 @@
           </tr>
         </thead>
         <tbody>
+          {{#each people}}
           <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
+            <td>{{patient}}</td>
+            <td>{{age}}</td>
+            <td>{{address}}</td>
+            <td>{{state}}</td>
+            <td>{{nationality}}</td>
           </tr>
+          {{/each}}
 
-          <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
-          </tr>
-
-          <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
-          </tr>
-
-          <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
-          </tr>
-
-          <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
-          </tr>
-
-          <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
-          </tr>
-
-          <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
-          </tr>
-
-          <tr>
-            <td>BN1253</td>
-            <td>28</td>
-            <td>Quảng Ninh</td>
-            <td>Đang điều trị</td>
-            <td>Hung-ga-ri</td>
-          </tr>
+         
         </tbody>
       </table>
     </div>

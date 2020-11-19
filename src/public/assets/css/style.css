@@ -1255,7 +1255,7 @@ section {
 }
 
 /*Patients Section*/
-.patients thead, tbody tr {
+.patients thead ,.patients tbody tr {
   display: table;
   width: 100%;
   table-layout: fixed;
