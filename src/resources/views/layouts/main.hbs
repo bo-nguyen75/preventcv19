@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prevent COVID-19</title>
 
+    {{!-- chatbot --}}
+    {{!-- <link rel="stylesheet" href="../../../../dist/jquery.convform.css">
+    <script type="text/javascript" src="../../../../dist/jquery.convform.js"></script> --}}
 
+    {{!-- chatbot --}}
     <!-- Favicons -->
     <link href="/assets/img/favicon.png" rel="icon">
     <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -27,6 +31,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/dfde2a1539.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -35,15 +42,92 @@
 
     <div class="container">
         {{{body}}}
+
     </div>
+
 
     <!--Link footer.hbs-->
     {{> footer}}
 
+    <!-- CHATBOT section -->
+    <div class="chat_icon">
+        <i class="fas fa-comments" aria-hidden="true"></i>
+
+    </div>
+    <div class="container">
+        <div class="chat_box">
+            <div class="head-cb">
+                <div class="close-cb">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="avatar">
+                    <img src="https://cdn.chatbot.com/widget/5ca71c7e431af645ebb0f6fc/eSHxrqmcEA__.png" alt=""
+                        class="ava-cb">
+                </div>
+            </div>
+
+            <div class="container conversation-cb">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="messenger message-admin">
+                            <p>Xin chào! <strong>Tên tôi là PC-Bot</strong>. Hôm nay của bạn thế nào? Hãy cho tôi biết
+                                nếu bạn có câu hỏi gì về dịch bệnh COVID-19 nhé!</p>
+                        </div>
+                        <div class="messenger message-user">
+                            <p>Dấu hiệu của bệnh này là gì?</p>
+                        </div>
+                        <div class="messenger message-admin">
+                            <p>Những người mắc bệnh COVID-19 đã có một loạt các triệu chứng được báo cáo - từ các triệu
+                                chứng nhẹ đến bệnh nghiêm trọng. Các triệu chứng có thể xuất hiện 2-14 ngày sau khi phơi
+                                nhiễm với vi-rút. Những người có các triệu chứng này có thể nhiễm COVID-19:
+
+                                Sốt hoặc ớn lạnh
+                                Ho
+                                Hụt hơi hoặc khó thở
+                                Mệt mỏi
+                                Đau cơ hoặc đau người
+                                Đau đầu
+                                Mới mất vị giác hoặc khứu giác
+                                Đau họng
+                                Ngạt mũi hoặc chảy nước mũi
+                                Buồn nôn hoặc nôn mửa
+                                Tiêu chảy</p>
+                        </div>
+                        <div class="messenger message-user">
+                            <p>Tôi muốn khai báo y tế</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="typer-cb" style="background: rgb(255, 255, 255); border-top-color: rgb(234, 234, 234);">
+                <input type="text" maxlength="256" placeholder="Nhập tin nhắn ở đây" style="color: rgb(150, 155, 166);">
+                <div class="send-icon"><i class="far fa-paper-plane"></i></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- End CHATBOT section -->
+
 
     <div id="preloader"></div>
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    {{!-- <a><img src="../../../../img/chatbot.png" alt=""></a> --}}
+
     <!-- Vendor JS Files -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.chat_icon').click(function (event) {
+                $('.chat_box').toggleClass('active')
+            });
+        })
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>

@@ -1268,3 +1268,123 @@ section {
   height: 260px;
   overflow: auto;
 }
+
+/*+++++++++++++++++++++++*/
+.chat_icon{
+  position: fixed;
+  right: 15px;
+  bottom: 70px;
+  font-size: 40px;
+  color: #3fbbc0;
+  cursor: pointer;
+  z-index: 1000;
+}
+.chat_box{
+  position: fixed;
+  right: 60px;
+  bottom: 80px;
+  width: 300px;
+  background:rgb(234, 238, 243);
+  z-index: 1001;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+}
+.chat_box.active{
+  transform: scaleY(1);
+
+}
+
+div.chat_box {
+  box-shadow: 0 9.5px 12.7px 0 rgba(0,0,0,.05);
+  border-radius: 10px 10px 0 0;
+}
+
+/*Header of chatbot*/
+.head-cb{
+  box-shadow: 0 9.5px 12.7px 0 rgba(0,0,0,.05);
+  border-radius: 10px 10px 0 0;
+  z-index: 1002;
+  background: rgb(255, 255, 255);
+  position: relative;
+  height: 60px;
+}
+
+.chat_box .head-cb .close-cb{
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+.ava-cb {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-right: 22px;
+}
+
+/*Message of chatbot*/
+.conversation-cb{
+  z-index: 1002;
+  height: 350px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.messenger {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px 15px;
+}
+
+.message-admin {
+  float: left;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  z-index: 1004;
+  font-size: 14px;
+}
+
+.message-user {
+  float: right;
+  border-radius: 10px;
+  background: rgb(147, 194, 196);
+  z-index: 1004;
+  font-size: 14px;
+}
+
+.message-admin p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.message-user p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*Typing section of chatbot*/
+.typer-cb{
+  position: absolute;
+  z-index: 1002;
+  height: 50px;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 5px;
+  border-radius: 0 0 10px 10px;
+}
+
+.typer-cb input {
+  font-size: 14px;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    padding: 0 20px;
+    background: transparent;
+    border: 0;
+}
