@@ -23,13 +23,17 @@ class HomeControllers {
           var datanewhomes = snapshot.val();
           db.ref('statistics').once('value', (snapshot) => {
             var people = snapshot.val();
+            db.ref('filter').once('value', (snapshot) => {
+              var filter = snapshot.val();
             res.render('home',{
             all: tg,
             vn : vn.data,
             datahomes: datanewhomes,
-            people:people
+            people:people,
+            filter:filter
         });
       })
+    })
     })
     }) 
       

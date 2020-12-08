@@ -11,7 +11,7 @@
         <div class="container">
           <h2>Chào mừng đến <span> Prevent COVID-19 WEBSITE</span></h2>
           <p>Trang cung cấp thông tin về dịch bệnh viêm đường hô hấp COVID-19</p>
-          <a href="/" class="btn-get-started scrollto">Tìm hiểu thêm</a>
+          <a href="/dieucanbiet" class="btn-get-started scrollto">Tìm hiểu thêm</a>
         </div>
       </div>
 
@@ -21,7 +21,7 @@
           <h2>Có thể bạn chưa biết</h2>
           <p>COVID-19 là đại dịch đầu tiên trong lịch sử và thực tế cho thấy đã có nhiều các thông tin sai lệch xung
             quanh cách phòng ngừa và điều trị căn bệnh này. Vậy đâu là sự thật?...</p>
-          <a href="#about" class="btn-get-started scrollto">Tìm hiểu thêm</a>
+          <a href="/dieucanbiet" class="btn-get-started scrollto">Tìm hiểu thêm</a>
         </div>
       </div>
 
@@ -290,6 +290,7 @@
           </div>
         </div>
 
+        <!--EVOLUTION SECTION-->
 
         <div class="db col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
           <a href="/dienbiendich" role="button" class="btn btn-success btn-block">Lọc lịch trình di chuyển bệnh nhân</a>
@@ -300,39 +301,24 @@
               <div class="widget no-padding blank">
                 <div class="evolution-section">
                   <ul>
+                    {{#each filter}}
                     <li>
                       <div class="timeline-line">
                         <div class="timeline-section">
+                          
                           <div class="timeline-head">
-                            <h5>17:55 09/11/2020</h5>
+                            <h5>{{date}}</h5>
                           </div>
 
                           <div class="timeline-content">
-                            <p><strong>THÔNG BÁO VỀ 2 CA MẮC MỚI (BN1214-1215): Là các ca nhập cảnh, được cách ly ngay
-                                tại
-                                Cần Thơ.</strong>
-
-                            </p>
-                            <p>
-                              - CA BỆNH 1214 (BN1214) tại Cần Thơ: nam, 32 tuổi, quốc tịch Việt Nam, có
-                              địa
-                              chỉ tại phường Tân Thịnh, TP. Hòa Bình, tỉnh Hoà Bình.
-                            </p>
-                            <p>
-                              - CA BỆNH 1215 (BN1215) tại Cần Thơ: nam, 31 tuổi, quốc tịch Việt Nam, có địa chỉ tại Minh
-                              Khai, quận Hai Bà Trưng, Hà Nội.
-                              Ngày 07/11, các bệnh nhân trên từ Hà Lan nhập cảnh Sân bay Cần Thơ trên chuyến bay VN5032,
-                              được cách ly tập trung ngay tại khu cách ly tập trung của TP. Cần Thơ. Ngày 08/11, các
-                              bệnh
-                              nhân trên được lấy mẫu xét nghiệm. Kết quả xét nghiệm ngày 08/11, cả 2 bệnh nhân dương
-                              tính
-                              với vi rút SARS-CoV-2. Hiện 2 bệnh nhân được cách ly, điều trị tại Bệnh viện Lao và Bệnh
-                              phổi Thành phố Cần Thơ.
-                            </p>
+                            <p><strong>{{title}}</strong></p>
+                            <p>{{content}}</p>
                           </div>
+                        
                         </div>
                       </div>
                     </li>
+                      {{/each}}
                   </ul>
                   <p class="text-center"><a class="text-xemthem" href="/dienbiendich">Xem thêm</a></p>
                 </div>
