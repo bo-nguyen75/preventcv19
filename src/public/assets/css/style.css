@@ -1388,3 +1388,25 @@ div.chat_box {
     background: transparent;
     border: 0;
 }
+.news-support {
+  margin-bottom: 10px;
+}
+.group-support {
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+}
+
+.page-support {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title-support {
+  margin-bottom: 10px;
+}
+
+.space-br{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
