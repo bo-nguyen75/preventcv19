@@ -251,25 +251,65 @@
                 chart: {
                   map: 'countries/vn/vn-all'
                 },
-
+                credits: {
+                  enabled: false
+                },
                 title: {
-                  text: 'BẢN ĐỒ HIỂN THỊ'
-
+                  text: 'BẢN ĐỒ DỊCH BỆNH'
                 },
-
                 subtitle: {
-                  text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/vn/vn-all.js">Vietnam</a>'
+                  text: ''
                 },
-
+                tooltip: {
+                  useHTML: true,
+                  backgroundColor: '#117b85',
+                  borderColor: '#aaa',
+                  headerFormat: '',
+                  pointFormat: '<div style="text-align: center;text-transform: uppercase;color:white">'
+                    + '<span style="text-align: center; "><b>{point.name}</b></span></div>'
+                    + ' <div style="color:white; "> <b>Nhiễm bệnh: <span class="badge badge-pill badge-danger">{point.value}</span></b> <br/>'
+                },
                 mapNavigation: {
                   enabled: true,
                   buttonOptions: {
                     verticalAlign: 'bottom'
                   }
                 },
+                legend: {
+                  title: {
+                    text: ''
+                  },
+                  align: 'center',
+                  verticalAlign: 'bottom',
+                  floating: false,
+                  layout: 'horizontal',
+                  valueDecimals: 0,
+                  backgroundColor: 'rgba(255,255,255,0.9)',
+                  symbolRadius: 0,
+                  symbolHeight: 14
+                },
+                colors: ['#f8f9fa', '#c5c573', '#ff9c07',
+                  '#ff7907', '#e01c1c', '#f70202'],
 
                 colorAxis: {
-                  min: 0
+                  dataClassColor: 'category',
+                  dataClasses: [{
+                    name: '0'
+                  }, {
+                    from: 1,
+                    to: 5
+                  }, {
+                    from: 6,
+                    to: 10
+                  }, {
+                    from: 11,
+                    to: 20
+                  }, {
+                    from: 21,
+                    to: 50
+                  }, {
+                    from: 50
+                  }]
                 },
 
                 series: [{
@@ -281,7 +321,7 @@
                     }
                   },
                   dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     format: '{point.name}'
                   }
                 }]
@@ -291,7 +331,6 @@
         </div>
 
         <!--EVOLUTION SECTION-->
-
         <div class="db col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
           <a href="/dienbiendich" role="button" class="btn btn-success btn-block">Lọc lịch trình di chuyển bệnh nhân</a>
           <br>
@@ -299,13 +338,13 @@
           <div class="container">
             <div class="evolution">
               <div class="widget no-padding blank">
-                <div class="evolution-section">
+                <div class="main-e evolution-section">
                   <ul>
                     {{#each filter}}
                     <li>
                       <div class="timeline-line">
                         <div class="timeline-section">
-                          
+
                           <div class="timeline-head">
                             <h5>{{date}}</h5>
                           </div>
@@ -314,11 +353,11 @@
                             <p><strong>{{title}}</strong></p>
                             <p>{{content}}</p>
                           </div>
-                        
+
                         </div>
                       </div>
                     </li>
-                      {{/each}}
+                    {{/each}}
                   </ul>
                   <p class="text-center"><a class="text-xemthem" href="/dienbiendich">Xem thêm</a></p>
                 </div>
@@ -338,7 +377,7 @@
       <div class="section-title">
         <h2>DANH SÁCH BỆNH NHÂN</h2>
       </div>
-      <table class="table table-striped" >
+      <table class="table table-striped">
         <thead>
           <tr>
             <th>Bệnh nhân</th>
@@ -359,7 +398,7 @@
           </tr>
           {{/each}}
 
-         
+
         </tbody>
       </table>
     </div>

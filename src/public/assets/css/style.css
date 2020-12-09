@@ -1236,7 +1236,7 @@ section {
 }
 
 /*Evolution*/
-.evolution-section ul {
+.main-e ul {
   overflow: hidden;
    display: -webkit-box;
    -webkit-line-clamp: 12; /* number of lines to show */
