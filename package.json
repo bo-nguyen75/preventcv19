@@ -1,7 +1,7 @@
 {
   "name": "preventcv19",
   "version": "1.0.0",
-  "description": "",
+  "description": "$env:GOOGLE_APPLICATION_CREDENTIALS=\"C:\\Users\\xuanp\\Desktop\\preventcv19-new\\contactform-cb752-firebase-adminsdk-25y9j-bda04b23ab.json\"",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
@@ -21,7 +21,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "firebase": "^8.0.2",
-    "firebase-admin": "^9.3.0"
+    "firebase-admin": "^9.3.0",
+    "nodemailer": "^6.4.16"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
