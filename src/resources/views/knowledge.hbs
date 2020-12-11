@@ -6,20 +6,18 @@
       <div class="container-md">
         <!-- ======= Frequently Asked Questioins Section ======= -->
         <section id="faq" class="faq section-bg">
-          <div class="container" data-aos="fade-up">
+          <div class="container" data-aos="fade-down">
             {{#if dieucanbiet}}
-            <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
-
+            <ul class="faq-list" data-aos="fade-down" data-aos-delay="100">
               {{#each dieucanbiet}}
-
               <li>
-                <a data-toggle="collapse" class="dcb-title" href="#faq1">
+                <a data-toggle="collapse" class="" data-target="#faq1">
 
                   {{title}}
 
                   <i class="icofont-simple-up"></i>
                 </a>
-                <div id="faq1" class="dcb-content collapsed" data-parent=".faq-list">
+                <div id="faq1" class="collapse" >
                   <p>
 
                     {{content}}
