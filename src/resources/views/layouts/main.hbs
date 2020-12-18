@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/dfde2a1539.js" crossorigin="anonymous"></script>
+    
 
     <script>
         window.fbAsyncInit = function () {
@@ -71,7 +72,7 @@
     {{> footer}}
 
     <!-- CHATBOT section -->
-    <div class="chat_icon">
+    {{!-- <div class="chat_icon">
         <i class="fas fa-comments" aria-hidden="true"></i>
 
     </div>
@@ -129,7 +130,7 @@
 
 
         </div>
-    </div>
+    </div> --}}
 
     <!-- End CHATBOT section -->
 
@@ -140,14 +141,14 @@
     {{!-- <a><img src="../../../../img/chatbot.png" alt=""></a> --}}
 
     <!-- Vendor JS Files -->
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.chat_icon').click(function (event) {
-                $('.chat_box').toggleClass('active')
-            });
-        })
-    </script>
+ 
+ <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+<script>
+  var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-778100-57II9WEYQAOFF3HC/index.json',
+  });
+</script>
+  
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -172,7 +173,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+ 
 </body>
 
 </html>
