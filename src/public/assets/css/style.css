@@ -78,8 +78,8 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 15px;
-  bottom: 15px;
+  right: 35px;
+  bottom: 100px;
   z-index: 99999;
 }
 
