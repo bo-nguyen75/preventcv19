@@ -29,32 +29,31 @@
                 </div>
               </th>
               <th scope="col">Số thứ tự</th>
-              <th scope="col">Bệnh Nhân</th>
-              <th scope="col">Tuổi</th>
-              <th scope="col">Địa Điểm</th>
-              <th scope="col">Tình trạng</th>
-              <th scope="col">Quốc tịch</th>
-              <th scope="col">Lựa chọn</th>
+              <th scope="col">Link</th>
+              <th scope="col">Nội Dung</th>
+              <th scope="col">Ngày</th>
+              <th scope="col">hình ảnh</th>
+              <th scope="col">tiêu đề</th>
             </tr>
           </thead>
           <tbody>
-            {{#each statistical}}
+            {{#each datanews}}
             <tr>
               <td>
                 <div class="form-checkbox">
-                  <input class="form-checkbox-input" type="checkbox" name="patientIds[]" value="{{patient}}">
+                  <input class="form-checkbox-input" type="checkbox" name="patientIds[]" value="{{link}}">
                 </div>
               </td>
               <td scope="row">{{sum @index 0}}</td>
-              <td scope="row">{{patient}}</td>
-              <td scope="row">{{age}}</td>
-              <td scope="row">{{address}}</td>
-              <td scope="row">{{status}}</td>
-              <td scope="row">{{nationality}}</td>
+              <td scope="row">{{Link}}</td>
+              <td scope="row">{{content}}</td>
+              <td scope="row">{{date}}</td>
+              <td scope="row">{{image}}</td>
+              <td scope="row">{{title}}</td>
               <td>
-                <a href="#update-patient-modal" class="edit" data-toggle="modal" data-patient="{{patient}}"><i
+                <a href="#update-patient-modal" class="edit" data-toggle="modal" data-patient="{{Link}}"><i
                     class="icofont-edit" data-toggle="tooltip" title="Edit"></i></a>
-                <a href="#delete-patient-modal" class="delete" data-toggle="modal" data-patient="{{patient}}"><i
+                <a href="#delete-patient-modal" class="delete" data-toggle="modal" data-patient="{{link}}"><i
                     class="icofont-ui-delete" data-toggle="tooltip" title="Delete"></i></a>
               </td>
             </tr>
@@ -69,26 +68,26 @@
   <div id="addEmployeeModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form action="/admin" method="POST">
+        <form action="/news" method="POST">
           <div class="modal-header">
             <h4 class="modal-title">Thêm bệnh nhân</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
           <div class="modal-body">
             <div class="form-group">
-              <input type="text" class="form-control" name="patient" placeholder="Bệnh Nhân">
+              <input type="text" class="form-control" name="link" placeholder="Link">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="age" placeholder="Tuổi">
+              <input type="text" class="form-control" name="content" placeholder="Nội dung">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="address" placeholder="Địa Điểm">
+              <input type="text" class="form-control" name="date" placeholder="Ngày">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="status" placeholder="Tình trạng">
+              <input type="text" class="form-control" name="image" placeholder="Hình ảnh">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="nationality" placeholder="Quốc tịch">
+              <input type="text" class="form-control" name="title" placeholder="Tiêu đề">
             </div>
           </div>
           <div class="modal-footer">
@@ -106,13 +105,13 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Xóa bệnh nhân?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Xóa tin tức?</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          Bạn chắc chắc muốn xóa bệnh nhân này!!!
+          Bạn chắc chắc muốn xóa tin tức này!!!
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
@@ -122,13 +121,13 @@
     </div>
   </div>
   {{!-- Delete form hide --}}
-  <form name="delete-statistics-form" action="/admin/{{patient}}?_method=DELETE" method="POST"></form>
+  <form name="delete-statistics-form" action="/news/{{Link}}?_method=DELETE" method="POST"></form>
 
   <!-- Edit Modal HTML -->
   <div id="update-patient-modal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form name="update-statistics-form" action="/admin/{{patient}}?_method=PUT" method="POST">
+        <form name="update-statistics-form" action="/news/{{link}}?_method=PUT" method="POST">
           <div class="modal-header">
             <h4 class="modal-title">Edit Employee</h4>
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -137,26 +136,24 @@
             {{!-- {{#each statistical}} --}}
             <div class="form-group">
               <label>Bệnh Nhân</label>
-              <input type="text" class="form-control" value="{{statistical.patient}}" id="patient" name="patient"
-                required>
+              <input type="text" class="form-control" value="{{statistical.link}}" id="link" name="link" required>
             </div>
             <div class="form-group">
               <label>Tuổi</label>
-              <input type="text" class="form-control" value="{{age}}" name="age" required>
+              <input type="text" class="form-control" value="{{content}}" name="content" required>
             </div>
             <div class="form-group">
               <label>Địa chỉ</label>
-              <input type="text" class="form-control" value="{{address}}" name="address" required>
+              <input type="text" class="form-control" value="{{date}}" name="date" required>
             </div>
             <div class="form-group">
               <label>Tình Trạng</label>
-              <input type="text" class="form-control" value="{{status}}" name="status" required>
+              <input type="text" class="form-control" value="{{image}}" name="image" required>
             </div>
             <div class="form-group">
               <label>Quốc tịch</label>
-              <input type="text" class="form-control" value="{{nationality}}" name="nationality" required>
+              <input type="text" class="form-control" value="{{title}}" name="title" required>
             </div>
-            {{!-- {{/each}} --}}
           </div>
           <div class="modal-footer">
             <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -197,11 +194,11 @@
       //When dialog confirm clicked
       $('#delete-patient-modal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget)
-        patientID = button.data('patient');
+        patientID = button.data('Link');
         console.log(patientID);
       });
       btnDeleteStatistics.onclick = function () {
-        deleteForm.action = '/admin/' + patientID + '?_method=Delete';
+        deleteForm.action = '/news/' + patientID + '?_method=Delete';
         deleteForm.submit();
       }
 
@@ -232,12 +229,12 @@
       var btnUpdateStatistics = document.getElementById('btn-update-statistics');
       $('#update-patient-modal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget)
-        patientID = button.data('patient');
+        patientID = button.data('link');
         console.log(patientID);
       });
       btnUpdateStatistics.onclick = function () {
 
-        updateForm.action = '/admin/' + patientID + '?_method=PUT';
+        updateForm.action = '/news/' + patientID + '?_method=PUT';
         updateForm.submit();
       }
     });

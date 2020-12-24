@@ -1,30 +1,26 @@
-const { database } = require("../config/db/");
 const connect = require("../config/db/");
 const db = connect.database();
-const rooRef = db.ref("statistics");
-class AdminControllers {
+const rooRef = db.ref("datanews");;
+
+class NewsControllers {
   // [GET] /news
   index(req, res) {
-    rooRef.on("value", (snapshot) => {
+    rooRef.once("value", (snapshot) => {
       const data = snapshot.val();
-      const data2 = snapshot.author;
-      var key = Object.keys(snapshot.val())[0];
-      console.log(key)
-      res.render("admin", { statistical: data });
+      res.render("news", { datanews: data });
     });
   }
 
   add(req, res) {
-    const key = req.body.patient;
     const autoId = rooRef.push().key;
-    rooRef.child(key).set({
-      patient: req.body.patient,
-      age: req.body.age,
-      address: req.body.address,
-      status: req.body.status,
-      nationality: req.body.nationality,
+    rooRef.child(autoId).set({
+      Link: req.body.link,
+      content: req.body.content,
+      date: req.body.date,
+      image: req.body.image,
+      title: req.body.title,
     });
-    res.redirect("admin");
+    res.redirect("news");
   }
 
   update(req, res) {
@@ -41,11 +37,10 @@ class AdminControllers {
 
   destroy(req, res) {
     const patientID = req.params.id;
-    console.log(patientID);
     rooRef.child(patientID).remove();
     res.redirect('back');
   }
 
 }
 
-module.exports = new AdminControllers();
+module.exports = new NewsControllers();
