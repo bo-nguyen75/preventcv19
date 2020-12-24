@@ -4,6 +4,7 @@ var express =require('express');
 const router = express.Router();
 var cheerio=require('cheerio');
 const data=require('../../../js/news.json');
+const fs =require('fs')
 var bodyParser = require('body-parser');
 
 
@@ -21,6 +22,7 @@ class NewsControllers {
     db.ref('datanews').on('value', (snapshot) => {
       
       var data = snapshot.val();
+      fs.writeFileSync('js/news.json', JSON.stringify(data));
       
 
       res.render('news', {datanews: data})
@@ -36,13 +38,8 @@ show(req,res){
     if(req.params.tintuc==data[i].title){
     link=data[i].Link;
     break;
-
     }
   }
-
-
-
-  
       var headers = {
         'User-Agent':'Super Agent/0.0.1',
         'Content-Type':'application/x-ww-form-urlencoded'
@@ -51,11 +48,7 @@ show(req,res){
         url :link,
         headers :headers,
         qs :{'key1':'xxx','key2':'yyy'}
-    
-
-
   }
-  
   request(option,function(error,response,body){
             if(error){
                 console.log(error);
@@ -72,10 +65,4 @@ show(req,res){
 
 }
 }
-
-
-
-
-  
-
 module.exports = new NewsControllers;
