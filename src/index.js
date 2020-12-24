@@ -4,6 +4,10 @@ const app = express();
 const handlebars = require('express-handlebars');
 const port = 3000;
 const route = require('./routes');
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
 
 app.use(express.static(path.join(__dirname, 'public')));
 
