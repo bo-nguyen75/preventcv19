@@ -37,7 +37,7 @@
             </tr>
           </thead>
           <tbody>
-            {{#each datanews}}
+            {{#each statistical}}
             <tr>
               <td>
                 <div class="form-checkbox">
@@ -51,9 +51,9 @@
               <td scope="row">{{image}}</td>
               <td scope="row">{{title}}</td>
               <td>
-                <a href="#update-patient-modal" class="edit" data-toggle="modal" data-patient="{{Link}}"><i
+                <a href="#update-patient-modal" class="edit" data-toggle="modal" data-patient="{{link1}}"><i
                     class="icofont-edit" data-toggle="tooltip" title="Edit"></i></a>
-                <a href="#delete-patient-modal" class="delete" data-toggle="modal" data-patient="{{link}}"><i
+                <a href="#delete-patient-modal" class="delete" data-toggle="modal" data-patient="{{link1}}"><i
                     class="icofont-ui-delete" data-toggle="tooltip" title="Delete"></i></a>
               </td>
             </tr>
@@ -105,13 +105,13 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Xóa tin tức?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Xóa bệnh nhân?</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          Bạn chắc chắc muốn xóa tin tức này!!!
+          Bạn chắc chắc muốn xóa bệnh nhân này!!!
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
@@ -121,7 +121,7 @@
     </div>
   </div>
   {{!-- Delete form hide --}}
-  <form name="delete-statistics-form" action="/news/{{Link}}?_method=DELETE" method="POST"></form>
+  <form name="delete-statistics-form" action="/news/{{link}}?_method=DELETE" method="POST"></form>
 
   <!-- Edit Modal HTML -->
   <div id="update-patient-modal" class="modal fade">
@@ -136,7 +136,8 @@
             {{!-- {{#each statistical}} --}}
             <div class="form-group">
               <label>Bệnh Nhân</label>
-              <input type="text" class="form-control" value="{{statistical.link}}" id="link" name="link" required>
+              <input type="text" class="form-control" value="{{statistical.link}}" id="link" name="link"
+                required>
             </div>
             <div class="form-group">
               <label>Tuổi</label>
@@ -194,7 +195,7 @@
       //When dialog confirm clicked
       $('#delete-patient-modal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget)
-        patientID = button.data('Link');
+        patientID = button.data('link1');
         console.log(patientID);
       });
       btnDeleteStatistics.onclick = function () {

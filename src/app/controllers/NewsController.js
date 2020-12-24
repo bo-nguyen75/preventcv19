@@ -7,14 +7,14 @@ class NewsControllers {
   index(req, res) {
     rooRef.once("value", (snapshot) => {
       const data = snapshot.val();
-      res.render("news", { datanews: data });
+      res.render("news", { statistical: data });
     });
   }
 
   add(req, res) {
     const autoId = rooRef.push().key;
     rooRef.child(autoId).set({
-      Link: req.body.link,
+      Link: req.body.Link,
       content: req.body.content,
       date: req.body.date,
       image: req.body.image,

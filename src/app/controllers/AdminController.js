@@ -1,15 +1,14 @@
+const { ref } = require("firebase-functions/lib/providers/database");
 const { database } = require("../config/db/");
 const connect = require("../config/db/");
 const db = connect.database();
-const rooRef = db.ref("statistics");
+var rooRef = db.ref("statistics");
 class AdminControllers {
   // [GET] /news
   index(req, res) {
-    rooRef.on("value", (snapshot) => {
+    rooRef.once("value", (snapshot) => {
       const data = snapshot.val();
-      const data2 = snapshot.author;
-      var key = Object.keys(snapshot.val())[0];
-      console.log(key)
+      // console.log(data);
       res.render("admin", { statistical: data });
     });
   }
@@ -17,7 +16,8 @@ class AdminControllers {
   add(req, res) {
     const key = req.body.patient;
     const autoId = rooRef.push().key;
-    rooRef.child(key).set({
+    const autoKey = key.substr(2,key.length);
+    rooRef.child(autoKey).set({
       patient: req.body.patient,
       age: req.body.age,
       address: req.body.address,
@@ -31,7 +31,7 @@ class AdminControllers {
     const newData = {
       age: req.body.age,
       address: req.body.address,
-      state: req.body.state,
+      status: req.body.status,
       nationality: req.body.nationality,
     }
     const patientID = req.params.id;
@@ -41,7 +41,6 @@ class AdminControllers {
 
   destroy(req, res) {
     const patientID = req.params.id;
-    console.log(patientID);
     rooRef.child(patientID).remove();
     res.redirect('back');
   }
