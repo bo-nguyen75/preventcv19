@@ -11,7 +11,7 @@ class FilterControllers {
 
   // [GET] / home
   index(req, res) {
-    db.ref('filter').once('value', (snapshot) => {
+    db.ref('filter').on('value', (snapshot) => {
      const data = snapshot.val();
       res.render('filter', {filter: data})
   });

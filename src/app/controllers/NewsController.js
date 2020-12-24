@@ -18,7 +18,7 @@ class NewsControllers {
   // [GET] / home
   index(req, res) {
    
-    db.ref('datanews').once('value', (snapshot) => {
+    db.ref('datanews').on('value', (snapshot) => {
       
       var data = snapshot.val();
       

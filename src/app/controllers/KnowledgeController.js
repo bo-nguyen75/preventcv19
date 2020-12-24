@@ -6,7 +6,7 @@ class KnowledgeControllers {
 
   // [GET] / home
   index(req, res) {
-    db.ref('dieucanbiet').once('value', (snapshot)=>{
+    db.ref('dieucanbiet').on('value', (snapshot)=>{
       const data =  snapshot.val();
       res.render('knowledge', {dieucanbiet: data});
   })

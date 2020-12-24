@@ -19,11 +19,11 @@ class HomeControllers {
     axios.get('https://disease.sh/v3/covid-19/all').then(function(all){
       var tg = all.data;
       axios.get('https://disease.sh/v3/covid-19/countries/vietnam').then(function(vn){
-        db.ref('datahome').once('value', (snapshot) => {
+        db.ref('datahome').on('value', (snapshot) => {
           var datanewhomes = snapshot.val();
-          db.ref('statistics').once('value', (snapshot) => {
+          db.ref('statistics').on('value', (snapshot) => {
             var people = snapshot.val();
-            db.ref('filter').once('value', (snapshot) => {
+            db.ref('filter').on('value', (snapshot) => {
               var filter = snapshot.val();
             res.render('home',{
             all: tg,

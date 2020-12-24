@@ -9,7 +9,7 @@ class SupportcitizenControllers {
 
   // [GET] / home
   index(req, res) {
-    db.ref('supportcitizen').once('value', (snapshot) => {
+    db.ref('supportcitizen').on('value', (snapshot) => {
       const data = snapshot.val();
        res.render('supportcitizen', {supportcitizen: data})
    });
