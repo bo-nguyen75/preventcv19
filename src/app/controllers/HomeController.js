@@ -19,6 +19,8 @@ admin.initializeApp({
 const db = admin.database();
 const nodemailer = require("nodemailer");
 const rooRef = db.ref('email');
+const dbb=admin.firestore();
+
 
 class HomeControllers {
 
@@ -100,7 +102,7 @@ class HomeControllers {
       <h3>Thông tin liên hệ</h3>
       <ul>
        <li>Address : Số 254 Nguyễn Văn Linh, Thạc Gián Thanh Khê, Đà Nẵng, Việt Nam</li>
-        <li>Phone: +84 903 127 637 </li>
+        <li>Phone: 0903 127 637</li>
         <li>Email: c1se22team@gmail.com </li>     
       </ul>
     `;
@@ -119,17 +121,17 @@ class HomeControllers {
     let info = await transporter.sendMail({
       from: '"1Capstone" <c1se22team@gmail.com>', // sender address,
       to: req.body.email,
-      subject: 'Website Contact Form',
+      subject: 'Chào mừng đến Prevent COVID-19 WEBSITE',
       text: 'Hello World',
       html: output
   })
 
     console.log('Message sent: %s', info.messageId);
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-    const autoId = rooRef.push().key;
-    rooRef.child(autoId).set({
-      email: req.body.email,
-    })
+    dbb.collection('send-email').doc().set({
+      date: new Date(),
+      email:req.body.email
+      }); 
     res.redirect('back');
   }
 

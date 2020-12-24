@@ -37,9 +37,10 @@
           <div class="col-lg-7 col-md-6 footer-newsletter">
             <h4>Nhận thông báo qua Email</h4>
             <p>Tin tức cập nhật sẽ được gửi đến Email của bạn.</p>
+            {{!-- {{msg}} --}}
             <form action="/email" method="POST">
-              <input type="email" value="email" name="email"><input type="submit" placeholder="Điền email ở đây"
-                value="Nhận thông báo">
+              <input type="email" name="email">
+              <input type="submit" placeholder="Điền email ở đây" value="Nhận thông báo">
             </form>
             <br>
             <div class="fb-page" data-href="https://www.facebook.com/Prevention-of-COVID-19-Community-103042364869283/"
