@@ -10,7 +10,7 @@ self.addEventListener('activate', function (event) {
     console.log('activated!');
 });
 
-self.addEventListener('message', function (event) {
+self.addEventListener('message', function (event) { 
     console.log("SW Received Message: " + event.data);
 });
 
