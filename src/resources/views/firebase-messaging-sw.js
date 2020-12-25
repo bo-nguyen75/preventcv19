@@ -35,7 +35,7 @@ initMessaging.setBackgroundMessageHandler(function (payload) {
 self.addEventListener('push', function (event) {
 
   console.log('Push Notification Received.');
-  console.log('Push Notification had this data: "${event.data.text()}"');
+  console.log(event.data.text());
     
     var eventData = event.data.text();
     var obj = JSON.parse(eventData); //Parse the received JSON object.
@@ -56,7 +56,7 @@ self.addEventListener('notificationclick', function (event) {
     event.notification.close();
 
     event.waitUntil(
-      clients.openWindow(event.notification.title)
+      clients.openWindow(event.notification.body)
     );
 });
 
