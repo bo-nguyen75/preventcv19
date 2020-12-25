@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="/css/admin.css">
+
+
+<!--===== CRUD TABLE =======-->
+
+<body>
+  <div class="container-xl">
+    <div class="table-responsive">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>QUẢN LÝ <b>BỆNH NHÂN</b></h2>
+            </div>
+            <div class="col-sm-6">
+              <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+                  class="icofont-ui-add"></i><span>Thêm bệnh nhân</span></a>
+              <a href="#deleteEmployeeModal" class="btn btn-danger check-all-submit-btn disabled" data-toggle="modal"><i
+                  class="icofont-ui-delete"></i> <span>Xóa bệnh nhân</span></a>
+            </div>
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                {{!-- <div class="form-checkbox">
+                  <input class="form-checkbox-input" type="checkbox" id="checkbox-all">
+                </div> --}}
+              </th>
+              <th scope="col">Số thứ tự</th>
+              <th scope="col">Ngày</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each statistical}}
+            <tr>
+              <td>
+                {{!-- <div class="form-checkbox">
+                  <input class="form-checkbox-input" type="checkbox" name="patientIds[]" value="{{link}}">
+                </div> --}}
+              </td>
+              <td scope="row">{{sum @index 0}}</td>
+              <td scope="row">{{this.date}}</td>
+              <td scope="row">{{this.email}}</td>
+              <td>
+                {{!-- <a href="#update-patient-modal" class="edit" data-toggle="modal" data-patient="{{email}}"><i
+                    class="icofont-edit" data-toggle="tooltip" title="Edit"></i></a> --}}
+                <a href="#delete-patient-modal" class="delete" data-toggle="modal" data-patient="{{email}}"><i
+                    class="icofont-ui-delete" data-toggle="tooltip" title="Delete"></i></a>
+              </td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Modal -->
+
+  <!-- Delete Modal HTML -->
+  <div class="modal fade" id="delete-patient-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Xóa tài khoản?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Bạn chắc chắc muốn xóa tài khoản này!!!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+          <button id="btn-delete-statistics" type="button" class="btn btn-danger">Xóa bỏ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- Delete form hide --}}
+  <form name="delete-statistics-form" action="/news/{{email}}?_method=DELETE" method="POST"></form>
+
+  
+  <!--==== End CRUD TABLE ====-->
+
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
+    //btn delete
+    document.addEventListener('DOMContentLoaded', function () {
+      var patientID;
+      var deleteForm = document.forms['delete-statistics-form'];
+      var btnDeleteStatistics = document.getElementById('btn-delete-statistics');
+      var checkboxAll = $('#checkbox-all');
+      var patientItemCheckbox = $('input[name="patientIds[]"]');
+      var checkAllSubmitBtn = $('.check-all-submit-btn');
+
+      //When dialog confirm clicked
+      $('#delete-patient-modal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        patientID = button.data('link1');
+        console.log(patientID);
+      });
+      btnDeleteStatistics.onclick = function () {
+        deleteForm.action = '/news/' + patientID + '?_method=Delete';
+        deleteForm.submit();
+      }
+
+      //Checkbox all changed
+      checkboxAll.change(function () {
+        var isCheckedAll = $(this).prop('checked');
+        patientItemCheckbox.prop('checked', isCheckedAll);
+      });
+
+      //Checkbox item changed
+      patientItemCheckbox.change(function () {
+        var isCheckAll = patientItemCheckbox.length === $('input[name="patientIds[]"]:checked').length;
+        checkboxAll.prop('checked', isCheckAll);
+      });
+
+      //Re-render check all submit button
+      function renderCheckAllSubmitBtn() {
+        var checkedCount = $('input[name="patientIds[]"]:checked').length;
+        console.log(checkedCount)
+      }
+      console.log(checkAllSubmitBtn);
+    });
+  </script>
+</body>

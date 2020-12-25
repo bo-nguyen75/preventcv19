@@ -15,8 +15,8 @@
             <div class="col-sm-6">
               <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
                   class="icofont-ui-add"></i><span>Thêm bệnh nhân</span></a>
-              <a href="#deleteEmployeeModal" class="btn btn-danger check-all-submit-btn disabled" data-toggle="modal"><i
-                  class="icofont-ui-delete"></i> <span>Xóa bệnh nhân</span></a>
+              {{!-- <a href="#deleteEmployeeModal" class="btn btn-danger check-all-submit-btn disabled" data-toggle="modal"><i
+                  class="icofont-ui-delete"></i> <span>Xóa bệnh nhân</span></a> --}}
             </div>
           </div>
         </div>
@@ -24,9 +24,9 @@
           <thead>
             <tr>
               <th>
-                <div class="form-checkbox">
+                {{!-- <div class="form-checkbox">
                   <input class="form-checkbox-input" type="checkbox" id="checkbox-all">
-                </div>
+                </div> --}}
               </th>
               <th scope="col">Số thứ tự</th>
               <th scope="col">Bệnh Nhân</th>
@@ -41,9 +41,9 @@
             {{#each statistical}}
             <tr>
               <td>
-                <div class="form-checkbox">
+                {{!-- <div class="form-checkbox">
                   <input class="form-checkbox-input" type="checkbox" name="patientIds[]" value="{{patient}}">
-                </div>
+                </div> --}}
               </td>
               <td scope="row">{{sum @index 0}}</td>
               <td scope="row">{{patient}}</td>
@@ -199,7 +199,6 @@
         var button = $(event.relatedTarget)
         patientID = button.data('patient').slice(2,button.data('patient').length);
         console.log(patientID);
-        console.log(button.data('patient'));
       });
       btnDeleteStatistics.onclick = function () {
         deleteForm.action = '/admin/' + patientID + '?_method=Delete';
